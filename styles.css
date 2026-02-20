@@ -1272,6 +1272,23 @@ a:hover {
     .footer-content {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    /* Stats as 3-column grid on tablet */
+    .hero-stats {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--spacing-sm);
+        padding-top: var(--spacing-xl);
+    }
+
+    .stat-divider {
+        display: none;
+    }
+
+    .stat-item {
+        text-align: center;
+        padding: var(--spacing-sm);
+    }
 }
 
 @media (max-width: 768px) {
@@ -1326,8 +1343,18 @@ a:hover {
     }
 
     .hero-stats {
-        flex-wrap: wrap;
-        gap: var(--spacing-lg);
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--spacing-sm);
+        padding-top: var(--spacing-xl);
+    }
+
+    .stat-divider {
+        display: none;
+    }
+
+    .stat-item {
+        padding: var(--spacing-sm);
     }
 
     .hero-visual {
