@@ -1,6 +1,54 @@
 // BrAbel Studios - Interactive JavaScript
 // Mobile Navigation, Scroll Effects, and Animations
 
+// ============= VIDEO PRELOADER =============
+(function () {
+    const preloader = document.getElementById('preloader');
+    const video = document.getElementById('preloader-video');
+    const spinner = document.querySelector('.loader-spinner');
+
+    if (!preloader) return;
+
+    // Lock scroll while loading
+    document.body.classList.add('preloading');
+
+    function dismiss() {
+        preloader.classList.add('hidden');
+        document.body.classList.remove('preloading');
+        // Remove from DOM after transition ends
+        preloader.addEventListener('transitionend', () => preloader.remove(), { once: true });
+    }
+
+    if (video) {
+        // Play once then dismiss
+        video.addEventListener('ended', dismiss);
+
+        // Safety net: if video stalls or errors, show spinner & auto-dismiss after 3s
+        video.addEventListener('error', () => {
+            if (spinner) { video.style.display = 'none'; spinner.style.display = 'block'; }
+            setTimeout(dismiss, 3000);
+        });
+
+        // Also cap max wait time at video duration + 500ms buffer
+        video.addEventListener('loadedmetadata', () => {
+            const cap = (video.duration * 1000) + 500;
+            setTimeout(dismiss, cap);
+        });
+
+        // Fallback if metadata never loads (e.g. on slow connections)
+        setTimeout(dismiss, 8000);
+
+        video.play().catch(() => {
+            // Autoplay blocked — show spinner and dismiss
+            if (spinner) { video.style.display = 'none'; spinner.style.display = 'block'; }
+            setTimeout(dismiss, 3000);
+        });
+    } else {
+        // No video element — just dismiss
+        setTimeout(dismiss, 500);
+    }
+})();
+
 // ============= MOBILE NAVIGATION =============
 const mobileToggle = document.getElementById('mobileToggle');
 const navMenu = document.getElementById('navMenu');
@@ -444,6 +492,11 @@ window.addEventListener('load', () => {
             }, 500);
         }, 2000);
     }
+});
+
+// ============= DYNAMIC COPYRIGHT YEAR =============
+document.querySelectorAll('.footer-bottom p').forEach(el => {
+    el.innerHTML = el.innerHTML.replace(/\d{4}/, new Date().getFullYear());
 });
 
 // ============= CONSOLE MESSAGE =============
