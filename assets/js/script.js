@@ -1,13 +1,14 @@
-// BrAbel Studios - Interactive JavaScript
+// BrAbel - Interactive JavaScript
 // Mobile Navigation, Scroll Effects, and Animations
 
-// ============= VIDEO PRELOADER =============
+// ============= VIDEO PRELOADER (pages with #preloader-video only) =============
 (function () {
     const preloader = document.getElementById('preloader');
     const video = document.getElementById('preloader-video');
     const spinner = document.querySelector('.loader-spinner');
 
-    if (!preloader) return;
+    // Only run if the page uses the video-based preloader element
+    if (!preloader || !video) return;
 
     // Lock scroll while loading
     document.body.classList.add('preloading');
@@ -15,38 +16,28 @@
     function dismiss() {
         preloader.classList.add('hidden');
         document.body.classList.remove('preloading');
-        // Remove from DOM after transition ends
         preloader.addEventListener('transitionend', () => preloader.remove(), { once: true });
     }
 
-    if (video) {
-        // Play once then dismiss
-        video.addEventListener('ended', dismiss);
+    // Play once then dismiss
+    video.addEventListener('ended', dismiss);
 
-        // Safety net: if video stalls or errors, show spinner & auto-dismiss after 3s
-        video.addEventListener('error', () => {
-            if (spinner) { video.style.display = 'none'; spinner.style.display = 'block'; }
-            setTimeout(dismiss, 3000);
-        });
+    video.addEventListener('error', () => {
+        if (spinner) { video.style.display = 'none'; spinner.style.display = 'block'; }
+        setTimeout(dismiss, 3000);
+    });
 
-        // Also cap max wait time at video duration + 500ms buffer
-        video.addEventListener('loadedmetadata', () => {
-            const cap = (video.duration * 1000) + 500;
-            setTimeout(dismiss, cap);
-        });
+    video.addEventListener('loadedmetadata', () => {
+        const cap = (video.duration * 1000) + 500;
+        setTimeout(dismiss, cap);
+    });
 
-        // Fallback if metadata never loads (e.g. on slow connections)
-        setTimeout(dismiss, 8000);
+    setTimeout(dismiss, 8000);
 
-        video.play().catch(() => {
-            // Autoplay blocked — show spinner and dismiss
-            if (spinner) { video.style.display = 'none'; spinner.style.display = 'block'; }
-            setTimeout(dismiss, 3000);
-        });
-    } else {
-        // No video element — just dismiss
-        setTimeout(dismiss, 500);
-    }
+    video.play().catch(() => {
+        if (spinner) { video.style.display = 'none'; spinner.style.display = 'block'; }
+        setTimeout(dismiss, 3000);
+    });
 })();
 
 // ============= MOBILE NAVIGATION =============
@@ -460,5 +451,5 @@ document.querySelectorAll('.footer-bottom p').forEach(el => {
 });
 
 // ============= CONSOLE MESSAGE =============
-console.log('%c👋 Welcome to BrAbel Studios!', 'font-size: 20px; font-weight: bold; color: #8b5cf6;');
+console.log('%c👋 Welcome to BrAbel!', 'font-size: 20px; font-weight: bold; color: #8b5cf6;');
 console.log('%cBuilt with ❤️ and modern web technologies', 'font-size: 14px; color: #64748b;');

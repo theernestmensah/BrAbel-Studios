@@ -1,5 +1,5 @@
 /* ===================================
-   BRABEL STUDIOS - DESIGN SYSTEM
+   BRABEL - DESIGN SYSTEM
    Modern, Premium Web Design Company
    =================================== */
 
@@ -1455,7 +1455,7 @@ a:hover {
 
 /* ============= PAGE HEADER ============= */
 .page-header {
-    padding: calc(var(--spacing-5xl) + 80px) 0 var(--spacing-5xl);
+    padding: 130px 0 70px;
     background: var(--color-surface);
     text-align: center;
     position: relative;
@@ -2277,4 +2277,248 @@ a:hover {
     to {
         transform: rotate(360deg);
     }
+}
+
+/* ═══════════════════════════════════════════════════
+   CONTACT PAGE — Canvas Hero
+   ═══════════════════════════════════════════════════ */
+.contact-hero-wrap {
+    position: relative;
+    overflow: hidden;
+    min-height: 460px;
+    padding: 130px 0 80px;
+    background: #07091a;
+    display: flex;
+    align-items: center;
+}
+
+/* Hide the old pseudo-element glow on contact page */
+.contact-hero-wrap::before {
+    display: none;
+}
+
+.contact-hero-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+    display: block;
+    z-index: 0;
+}
+
+/* Gradient accent on the heading */
+.contact-grad {
+    background: linear-gradient(135deg, hsl(20, 90%, 50%), hsl(32, 95%, 50%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Status chips row */
+.contact-hero-chips {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1.8rem;
+}
+
+.chero-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.42rem 1.1rem;
+    background: rgba(255, 255, 255, .06);
+    border: 1px solid rgba(255, 255, 255, .12);
+    border-radius: 99px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: rgba(240, 242, 255, .8);
+    backdrop-filter: blur(10px);
+}
+
+.chero-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: hsl(20, 90%, 50%);
+    box-shadow: 0 0 6px hsl(20, 90%, 50%);
+    flex-shrink: 0;
+}
+
+.chero-dot-amber {
+    background: hsl(32, 95%, 50%);
+    box-shadow: 0 0 6px hsl(32, 95%, 50%);
+}
+
+.chero-dot-green {
+    background: hsl(142, 70%, 45%);
+    box-shadow: 0 0 6px hsl(142, 70%, 45%);
+}
+
+/* ═══════════════════════════════════════════════════
+   FAQ SECTION — WebGL Shader Background + Accordion
+   ═══════════════════════════════════════════════════ */
+.faq-section-wrap {
+    position: relative;
+    overflow: hidden;
+    padding: 100px 0 100px;
+    background: #060814;
+}
+
+.faq-shader-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 0;
+}
+
+/* Accordion wrapper */
+.faq-accordion {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+/* Each FAQ item */
+.faq-item {
+    border-bottom: 1px solid rgba(255, 255, 255, .08);
+}
+
+.faq-item:first-child {
+    border-top: 1px solid rgba(255, 255, 255, .08);
+}
+
+/* Question button */
+.faq-q {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1.35rem 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #eef0ff;
+    font-size: 1.05rem;
+    font-weight: 600;
+    font-family: 'Outfit', sans-serif;
+    text-align: left;
+    line-height: 1.4;
+}
+
+.faq-q:hover {
+    color: hsl(20, 90%, 60%);
+}
+
+/* Chevron icon */
+.faq-chevron {
+    flex-shrink: 0;
+    color: hsl(20, 90%, 55%);
+    transition: transform 0.3s ease;
+}
+
+.faq-open .faq-chevron {
+    transform: rotate(180deg);
+}
+
+/* Answer panel */
+.faq-a {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.38s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.faq-a p {
+    padding: 0 0 1.5rem;
+    color: rgba(180, 190, 230, 0.8);
+    font-size: 0.97rem;
+    line-height: 1.75;
+    margin: 0;
+}
+
+/* Active item has a subtle left orange accent */
+.faq-item.faq-open .faq-q {
+    color: hsl(20, 90%, 60%);
+}
+
+/* ═══════════════════════════════════════════════════
+   SUB-PAGE HERO CANVAS  (About / Services / Portfolio
+   / Process / Pricing)
+   ═══════════════════════════════════════════════════ */
+.subpage-hero-wrap {
+    position: relative;
+    overflow: hidden;
+    min-height: 420px;
+    padding: 130px 0 70px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+/* Per-page background tints (fallback before canvas renders) */
+#aboutHero {
+    background: #05071e;
+}
+
+#servicesHero {
+    background: #030b1a;
+}
+
+#portfolioHero {
+    background: #08060e;
+}
+
+#processHero {
+    background: #04081a;
+}
+
+#pricingHero {
+    background: #050a1c;
+}
+
+.subpage-hero-canvas {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 0;
+}
+
+/* Content stacks above canvas */
+.subpage-hero-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+
+.subpage-hero-content .page-title {
+    font-size: clamp(1.9rem, 4vw, 3.2rem);
+    font-weight: 900;
+    color: #f0f2ff;
+    letter-spacing: -0.03em;
+    line-height: 1.12;
+    font-family: 'Outfit', sans-serif;
+    margin-bottom: 1rem;
+}
+
+.subpage-hero-content .page-description {
+    font-size: 1.05rem;
+    color: rgba(180, 190, 230, 0.78);
+    max-width: 560px;
+    margin: 0 auto;
+    line-height: 1.72;
+}
+
+/* Accent gradient word on hero titles */
+.hero-accent {
+    background: linear-gradient(90deg, hsl(20, 90%, 60%), hsl(38, 100%, 65%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }

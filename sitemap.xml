@@ -1,47 +1,47 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
    <url>
-      <loc>https://brabelstudios.com/</loc>
+      <loc>https://brabel.solutions/</loc>
       <changefreq>weekly</changefreq>
       <priority>1.0</priority>
    </url>
    <url>
-      <loc>https://brabelstudios.com/services.html</loc>
+      <loc>https://brabel.solutions/services.html</loc>
       <changefreq>weekly</changefreq>
       <priority>0.9</priority>
    </url>
    <url>
-      <loc>https://brabelstudios.com/portfolio.html</loc>
+      <loc>https://brabel.solutions/portfolio.html</loc>
       <changefreq>weekly</changefreq>
       <priority>0.9</priority>
    </url>
    <url>
-      <loc>https://brabelstudios.com/about.html</loc>
+      <loc>https://brabel.solutions/about.html</loc>
       <changefreq>monthly</changefreq>
       <priority>0.8</priority>
    </url>
    <url>
-      <loc>https://brabelstudios.com/process.html</loc>
+      <loc>https://brabel.solutions/process.html</loc>
       <changefreq>monthly</changefreq>
       <priority>0.8</priority>
    </url>
    <url>
-      <loc>https://brabelstudios.com/pricing.html</loc>
+      <loc>https://brabel.solutions/pricing.html</loc>
       <changefreq>monthly</changefreq>
       <priority>0.8</priority>
    </url>
    <url>
-      <loc>https://brabelstudios.com/contact.html</loc>
+      <loc>https://brabel.solutions/contact.html</loc>
       <changefreq>monthly</changefreq>
       <priority>0.8</priority>
    </url>
    <url>
-      <loc>https://brabelstudios.com/privacy.html</loc>
+      <loc>https://brabel.solutions/privacy.html</loc>
       <changefreq>yearly</changefreq>
       <priority>0.3</priority>
    </url>
    <url>
-      <loc>https://brabelstudios.com/terms.html</loc>
+      <loc>https://brabel.solutions/terms.html</loc>
       <changefreq>yearly</changefreq>
       <priority>0.3</priority>
    </url>

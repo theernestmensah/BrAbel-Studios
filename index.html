@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -8,520 +8,455 @@
         content="Professional web design and development services for startups and SMBs. Transform your online presence with modern, high-converting websites.">
     <meta name="keywords" content="web design, web development, UI/UX, e-commerce, website redesign">
 
-    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://brabelstudios.com/">
-    <meta property="og:title" content="BrAbel Studios - Modern Web Design & Development">
-    <meta property="og:description"
-        content="Professional web design and development services for startups and SMBs. Transform your online presence with modern, high-converting websites.">
-    <meta property="og:image" content="https://brabelstudios.com/assets/images/logo.jpeg">
-    <meta property="og:site_name" content="BrAbel Studios">
-    <meta property="og:locale" content="en_US">
+    <meta property="og:url" content="https://brabel.solutions/">
+    <meta property="og:title" content="BrAbel - Modern Web Design & Development">
+    <meta property="og:description" content="Professional web design and development services for startups and SMBs.">
+    <meta property="og:image" content="https://brabel.solutions/assets/images/logo.jpeg">
+    <meta property="og:site_name" content="BrAbel">
 
-    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://brabelstudios.com/">
-    <meta name="twitter:title" content="BrAbel Studios - Modern Web Design & Development">
-    <meta name="twitter:description"
-        content="Professional web design and development services for startups and SMBs. Transform your online presence with modern, high-converting websites.">
-    <meta name="twitter:image" content="https://brabelstudios.com/assets/images/logo.jpeg">
-    <title>BrAbel Studios - Modern Web Design & Development</title>
+    <meta name="twitter:url" content="https://brabel.solutions/">
+    <meta name="twitter:title" content="BrAbel - Modern Web Design & Development">
+    <meta name="twitter:description" content="Professional web design and development services for startups and SMBs.">
+    <meta name="twitter:image" content="https://brabel.solutions/assets/images/logo.jpeg">
+    <title>BrAbel - Modern Web Design & Development</title>
 
-    <!-- Favicon -->
     <link rel="icon" type="image/jpeg" href="assets/images/logo.jpeg">
     <link rel="apple-touch-icon" href="assets/images/logo.jpeg">
 
-    <!-- Preconnect for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <!-- Google Fonts -->
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap"
         rel="stylesheet">
 
-    <!-- Styles -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
-
-    <link rel="canonical" href="https://brabelstudios.com/">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="canonical" href="https://brabel.solutions/">
 </head>
 
 <body>
-    <!-- Video Preloader -->
-    <div id="preloader">
-        <video autoplay muted playsinline id="preloader-video">
-            <source src="assets/media/loader.mp4" type="video/mp4">
-        </video>
-        <!-- Fallback spinner shown if video fails to autoplay -->
-        <div class="loader-spinner"></div>
-    </div>
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="container nav-container">
-            <a href="index.html" class="logo">
-                <span class="logo-pixel">BrAbel</span><span class="logo-craft">Studios</span>
+
+    <!-- ═══════════════════════════════════════════
+         NAVIGATION
+    ═══════════════════════════════════════════ -->
+    <nav id="navbar" class="bnav">
+        <div class="bnav-inner container-xl">
+            <a href="index.html" class="bnav-logo">
+                <span class="lp">Br</span><span class="lc">Abel</span>
             </a>
 
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="index.html" class="nav-link active">Home</a></li>
-                <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="services.html" class="nav-link">Services</a></li>
-                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
-                <li><a href="process.html" class="nav-link">Process</a></li>
-                <li><a href="pricing.html" class="nav-link">Pricing</a></li>
-                <li><a href="contact.html" class="nav-link nav-cta">Get a Quote</a></li>
+            <ul class="bnav-links" id="navMenu">
+                <li><a href="index.html" class="nl active">Home</a></li>
+                <li><a href="about.html" class="nl">About</a></li>
+                <li><a href="services.html" class="nl">Services</a></li>
+                <li><a href="portfolio.html" class="nl">Portfolio</a></li>
+                <li><a href="process.html" class="nl">Process</a></li>
+                <li><a href="pricing.html" class="nl">Pricing</a></li>
+                <li><a href="contact.html" class="nl-cta">Get a Quote</a></li>
             </ul>
 
-            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
+            <button class="bnav-toggle" id="mobileToggle" aria-label="Menu">
+                <span></span><span></span><span></span>
             </button>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-background">
-            <div class="gradient-orb orb-1"></div>
-            <div class="gradient-orb orb-2"></div>
-            <div class="gradient-orb orb-3"></div>
-        </div>
+    <!-- ═══════════════════════════════════════════
+         HERO — Canvas Aurora Background
+    ═══════════════════════════════════════════ -->
+    <section class="hero-wrap" id="hero">
+        <canvas id="heroCanvas" class="hero-canvas"></canvas>
 
-        <div class="container hero-container">
-            <div class="hero-content">
-                <div class="hero-badge">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                        <path d="M8 0L10.1 5.9L16 8L10.1 10.1L8 16L5.9 10.1L0 8L5.9 5.9L8 0Z" fill="currentColor" />
-                    </svg>
-                    Growing Portfolio
-                </div>
+        <div class="hero-content container-xl">
+            <div class="row align-items-center min-vh-100 py-5">
 
-                <h1 class="hero-title">
-                    Transform Your Business with
-                    <span class="gradient-text">Award-Winning</span>
-                    Web Design
-                </h1>
-
-                <p class="hero-description">
-                    We help startups and growing businesses stand out online with stunning,
-                    high-converting websites that drive real results. From concept to launch,
-                    we make your digital vision a reality.
-                </p>
-
-                <div class="hero-cta">
-                    <a href="contact.html" class="btn btn-primary btn-large">
-                        Get a Free Quote
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                            <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </a>
-                    <a href="portfolio.html" class="btn btn-secondary btn-large">
-                        View Our Work
-                    </a>
-                </div>
-
-                <div class="hero-stats">
-                    <div class="stat-item">
-                        <div class="stat-number">4+</div>
-                        <div class="stat-label">Active Projects</div>
+                <!-- Left: Text -->
+                <div class="col-lg-6 hero-left">
+                    <div class="hero-pill">
+                        <span class="hero-pill-dot"></span>
+                        Growing Portfolio
                     </div>
-                    <div class="stat-divider"></div>
-                    <div class="stat-item">
-                        <div class="stat-number">100%</div>
-                        <div class="stat-label">Client Satisfaction</div>
-                    </div>
-                    <div class="stat-divider"></div>
-                    <div class="stat-item">
-                        <div class="stat-number">2+</div>
-                        <div class="stat-label">Years Experience</div>
-                    </div>
-                </div>
-            </div>
 
-            <div class="hero-visual">
-                <div class="mockup-container">
-                    <div class="mockup-card mockup-1">
-                        <div class="mockup-window">
-                            <div class="mockup-dots">
-                                <span></span><span></span><span></span>
-                            </div>
-                        </div>
-                        <div class="mockup-content" id="mockup1"></div>
-                    </div>
-                    <div class="mockup-card mockup-2">
-                        <div class="mockup-window">
-                            <div class="mockup-dots">
-                                <span></span><span></span><span></span>
-                            </div>
-                        </div>
-                        <div class="mockup-content" id="mockup2"></div>
-                    </div>
-                    <div class="mockup-card mockup-3">
-                        <div class="mockup-phone" id="mockup3"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                    <h1 class="hero-h1">
+                        Transform Your Business with
+                        <span class="h1-grad">Award-Winning</span>
+                        Web Design
+                    </h1>
 
-    <!-- Trusted By / Clients Section -->
-    <section class="clients-section" style="padding: 3rem 0; border-bottom: 1px solid var(--color-border);">
-        <div class="container">
-            <p class="clients-title"
-                style="text-align: center; color: var(--color-text-light); margin-bottom: 2rem; font-size: 0.9rem; letter-spacing: 0.05em; text-transform: uppercase;">
-                Trusted by innovative businesses</p>
-            <div class="clients-grid"
-                style="display: flex; justify-content: center; align-items: center; gap: 4rem; flex-wrap: wrap;">
-
-                <!-- BGBrand Logo -->
-                <div class="client-logo" style="opacity: 0.8; transition: opacity 0.3s; cursor: default;"
-                    onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.8'">
-                    <span
-                        style="font-family: 'Outfit', sans-serif; font-weight: 800; font-size: 28px; color: var(--color-text); letter-spacing: -1px;">BG<span
-                            style="color: var(--color-primary);">BRAND</span></span>
-                </div>
-
-                <!-- Great Key Logo -->
-                <div class="client-logo" style="opacity: 0.8; transition: opacity 0.3s; cursor: default;"
-                    onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.8'">
-                    <div style="display: flex; align-items: center; gap: 10px;">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
-                            <path
-                                d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM11 17L7 13L8.41 11.59L11 14.17L19.59 5.59L21 7L11 17Z"
-                                fill="#1e3a8a" fill-opacity="0.9" />
-                        </svg>
-                        <div style="display: flex; flex-direction: column; line-height: 1;">
-                            <span style="font-family: serif; font-weight: 700; font-size: 20px; color: #1e3a8a;">Great
-                                Key</span>
-                            <span
-                                style="font-family: sans-serif; font-size: 8px; color: #1e3a8a; letter-spacing: 1px; text-transform: uppercase;">Educational
-                                Consult</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Preview -->
-    <section class="services-preview section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">What We Do</span>
-                <h2 class="section-title">Services That Drive Growth</h2>
-                <p class="section-description">
-                    End-to-end digital solutions designed to elevate your brand and convert visitors into customers
-                </p>
-            </div>
-
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-                            <rect x="4" y="4" width="24" height="24" rx="2" stroke="currentColor" stroke-width="2" />
-                            <path d="M4 12H28" stroke="currentColor" stroke-width="2" />
-                            <circle cx="8" cy="8" r="1" fill="currentColor" />
-                            <circle cx="12" cy="8" r="1" fill="currentColor" />
-                            <circle cx="16" cy="8" r="1" fill="currentColor" />
-                        </svg>
-                    </div>
-                    <h3 class="service-title">Web Design (UI/UX)</h3>
-                    <p class="service-text">Beautiful, intuitive interfaces that captivate users and enhance engagement
-                        through strategic design thinking.</p>
-                    <a href="services.html#web-design" class="service-link">
-                        Learn More
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                            <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-                        </svg>
-                    </a>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-                            <path d="M16 4L4 10L16 16L28 10L16 4Z" stroke="currentColor" stroke-width="2"
-                                stroke-linejoin="round" />
-                            <path d="M4 16L16 22L28 16" stroke="currentColor" stroke-width="2"
-                                stroke-linejoin="round" />
-                            <path d="M4 22L16 28L28 22" stroke="currentColor" stroke-width="2"
-                                stroke-linejoin="round" />
-                        </svg>
-                    </div>
-                    <h3 class="service-title">Web Development</h3>
-                    <p class="service-text">Fast, secure, and scalable websites built with cutting-edge technology and
-                        best coding practices.</p>
-                    <a href="services.html#web-development" class="service-link">
-                        Learn More
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                            <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-                        </svg>
-                    </a>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-                            <rect x="4" y="8" width="24" height="16" rx="2" stroke="currentColor" stroke-width="2" />
-                            <path d="M12 16L14 18L20 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-                    </div>
-                    <h3 class="service-title">E-commerce Solutions</h3>
-                    <p class="service-text">Complete online stores optimized for conversions, with seamless checkout
-                        experiences and powerful features.</p>
-                    <a href="services.html#ecommerce" class="service-link">
-                        Learn More
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                            <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-                        </svg>
-                    </a>
-                </div>
-            </div>
-
-            <div class="section-cta">
-                <a href="services.html" class="btn btn-outline">
-                    Explore All Services
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Portfolio Preview -->
-    <section class="portfolio-preview section section-dark">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">Our Work</span>
-                <h2 class="section-title">Case Studies That Speak Results</h2>
-                <p class="section-description">
-                    Real projects, real impact. See how we've helped businesses achieve their digital goals
-                </p>
-            </div>
-
-            <div class="portfolio-grid">
-                <div class="portfolio-card">
-                    <div class="portfolio-image" id="portfolio1">
-                        <div class="portfolio-overlay">
-                            <a href="portfolio.html#project1" class="portfolio-view">View Case Study</a>
-                        </div>
-                    </div>
-                    <div class="portfolio-content">
-                        <div class="portfolio-tags">
-                            <span class="tag">Education</span>
-                            <span class="tag">Web Design</span>
-                        </div>
-                        <h3 class="portfolio-title">GreatKey Educational Consult</h3>
-                        <p class="portfolio-text">Unlocking potential with a comprehensive educational platform and
-                            resource hub</p>
-                        <div class="portfolio-metrics">
-                            <div class="metric">
-                                <span class="metric-value">200%</span>
-                                <span class="metric-label">Enrollment</span>
-                            </div>
-                            <div class="metric">
-                                <span class="metric-value">50+</span>
-                                <span class="metric-label">Courses</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="portfolio-card">
-                    <div class="portfolio-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
-                        <div class="portfolio-overlay">
-                            <a href="portfolio.html#project2" class="portfolio-view">View Case Study</a>
-                        </div>
-                    </div>
-                    <div class="portfolio-content">
-                        <div class="portfolio-tags">
-                            <span class="tag">E-commerce</span>
-                            <span class="tag">Fashion</span>
-                        </div>
-                        <h3 class="portfolio-title">BGBrand (House of BG)</h3>
-                        <p class="portfolio-text">Premium fashion brand showcasing unique style and global elegance</p>
-                        <div class="portfolio-metrics">
-                            <div class="metric">
-                                <span class="metric-value">3x</span>
-                                <span class="metric-label">Engagement</span>
-                            </div>
-                            <div class="metric">
-                                <span class="metric-value">Global</span>
-                                <span class="metric-label">Reach</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="section-cta">
-                <a href="portfolio.html" class="btn btn-primary">
-                    View Full Portfolio
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section class="testimonials section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">Client Love</span>
-                <h2 class="section-title">What Our Clients Say</h2>
-            </div>
-
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="testimonial-rating">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
-                            <path d="M10 0L12.9 6.9L20 8L15 13.1L16.2 20L10 16.9L3.8 20L5 13.1L0 8L7.1 6.9L10 0Z" />
-                        </svg>
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
-                            <path d="M10 0L12.9 6.9L20 8L15 13.1L16.2 20L10 16.9L3.8 20L5 13.1L0 8L7.1 6.9L10 0Z" />
-                        </svg>
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
-                            <path d="M10 0L12.9 6.9L20 8L15 13.1L16.2 20L10 16.9L3.8 20L5 13.1L0 8L7.1 6.9L10 0Z" />
-                        </svg>
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
-                            <path d="M10 0L12.9 6.9L20 8L15 13.1L16.2 20L10 16.9L3.8 20L5 13.1L0 8L7.1 6.9L10 0Z" />
-                        </svg>
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
-                            <path d="M10 0L12.9 6.9L20 8L15 13.1L16.2 20L10 16.9L3.8 20L5 13.1L0 8L7.1 6.9L10 0Z" />
-                        </svg>
-                    </div>
-                    <p class="testimonial-text">
-                        "Working with BrAbel Studios was an amazing experience. They created a stunning website for
-                        BGBrand
-                        that perfectly captures our vision. Professional, creative, and truly committed to excellence!"
+                    <p class="hero-p">
+                        We help startups and growing businesses stand out online with
+                        stunning, high-converting websites that drive real results.
                     </p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">BA</div>
-                        <div class="author-info">
-                            <div class="author-name">Betty Ampomaa</div>
-                            <div class="author-title">Founder, BGBrand</div>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="testimonial-card">
-                    <div class="testimonial-rating">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
-                            <path d="M10 0L12.9 6.9L20 8L15 13.1L16.2 20L10 16.9L3.8 20L5 13.1L0 8L7.1 6.9L10 0Z" />
-                        </svg>
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
-                            <path d="M10 0L12.9 6.9L20 8L15 13.1L16.2 20L10 16.9L3.8 20L5 13.1L0 8L7.1 6.9L10 0Z" />
-                        </svg>
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
-                            <path d="M10 0L12.9 6.9L20 8L15 13.1L16.2 20L10 16.9L3.8 20L5 13.1L0 8L7.1 6.9L10 0Z" />
-                        </svg>
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
-                            <path d="M10 0L12.9 6.9L20 8L15 13.1L16.2 20L10 16.9L3.8 20L5 13.1L0 8L7.1 6.9L10 0Z" />
-                        </svg>
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
-                            <path d="M10 0L12.9 6.9L20 8L15 13.1L16.2 20L10 16.9L3.8 20L5 13.1L0 8L7.1 6.9L10 0Z" />
-                        </svg>
-                    </div>
-                    <p class="testimonial-text">
-                        "BrAbel Studios delivered exactly what we needed for Great Key Educational Consult. The website
-                        is
-                        professional, user-friendly, and has helped us reach more students. Highly recommended!"
-                    </p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">KN</div>
-                        <div class="author-info">
-                            <div class="author-name">Kwame Nkrumah</div>
-                            <div class="author-title">CEO, Great Key Educational Consult</div>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="cta-section section">
-        <div class="container">
-            <div class="cta-card">
-                <div class="cta-content">
-                    <h2 class="cta-title">Ready to Transform Your Online Presence?</h2>
-                    <p class="cta-text">
-                        Let's discuss your project and create a website that drives real business results.
-                        Get a free consultation and quote today.
-                    </p>
-                    <div class="cta-buttons">
-                        <a href="contact.html" class="btn btn-primary btn-large">
+                    <div class="hero-btns">
+                        <a href="contact.html" class="btn-brand">
                             Get a Free Quote
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2"
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2"
                                     stroke-linecap="round" />
                             </svg>
                         </a>
-                        <a href="tel:+233509563068" class="btn btn-outline btn-large">
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                <path
-                                    d="M18 14v3a2 2 0 01-2.18 2A19.79 19.79 0 013 6.18 2 2 0 015 4h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 12.8a16 16 0 006.11 6.11l2.16-2.16a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0118 18z"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
-                            Call Us Now
-                        </a>
+                        <a href="portfolio.html" class="btn-ghost">View Our Work</a>
+                    </div>
+
+                    <div class="hero-stats">
+                        <div class="hstat">
+                            <span class="hstat-n">4+</span>
+                            <span class="hstat-l">Active Projects</span>
+                        </div>
+                        <div class="hstat-div"></div>
+                        <div class="hstat">
+                            <span class="hstat-n">100%</span>
+                            <span class="hstat-l">Client Satisfaction</span>
+                        </div>
+                        <div class="hstat-div"></div>
+                        <div class="hstat">
+                            <span class="hstat-n">2+</span>
+                            <span class="hstat-l">Years Experience</span>
+                        </div>
                     </div>
                 </div>
-                <div class="cta-visual">
-                    <div class="cta-float-card card-1">
-                        <div class="float-icon">✓</div>
-                        <div class="float-text">Fast Delivery</div>
+
+                <!-- Right: Canvas-drawn mockup panel -->
+                <div class="col-lg-6 hero-right d-flex justify-content-center mt-5 mt-lg-0">
+                    <div class="hero-canvas-panel">
+                        <canvas id="mockupCanvas" class="mockup-canvas"></canvas>
                     </div>
-                    <div class="cta-float-card card-2">
-                        <div class="float-icon">★</div>
-                        <div class="float-text">Premium Quality</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         TRUSTED BY
+    ═══════════════════════════════════════════ -->
+    <section class="trusted-bar">
+        <div class="container-xl">
+            <p class="trusted-eyebrow">Trusted by innovative businesses</p>
+            <div class="trusted-logos">
+
+                <div class="tlogo">
+                    <span class="tl-word">BG<span class="tl-accent">BRAND</span></span>
+                </div>
+
+                <div class="tlogo">
+                    <div class="tl-icon-row">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15l-4-4 1.41-1.41L11 14.17l7.59-7.59L20 8l-9 9z"
+                                fill="#1e3a8a" />
+                        </svg>
+                        <div class="tl-text">
+                            <span class="tl-name">Great Key</span>
+                            <span class="tl-sub">Educational Consult</span>
+                        </div>
                     </div>
-                    <div class="cta-float-card card-3">
-                        <div class="float-icon">♥</div>
-                        <div class="float-text">Client Focused</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         SERVICES — Canvas Geo Background
+    ═══════════════════════════════════════════ -->
+    <section class="svc-section" id="services">
+        <canvas id="svcCanvas" class="svc-canvas"></canvas>
+
+        <div class="container-xl position-relative" style="z-index:2">
+            <div class="sec-head text-center">
+                <span class="sec-chip">What We Do</span>
+                <h2 class="sec-title">Services That Drive Growth</h2>
+                <p class="sec-sub">End-to-end digital solutions designed to elevate your brand and convert visitors into
+                    customers</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="scard">
+                        <div class="scard-icon">
+                            <svg width="26" height="26" viewBox="0 0 32 32" fill="none">
+                                <rect x="4" y="4" width="24" height="24" rx="2" stroke="currentColor"
+                                    stroke-width="2" />
+                                <path d="M4 12H28" stroke="currentColor" stroke-width="2" />
+                                <circle cx="8" cy="8" r="1" fill="currentColor" />
+                                <circle cx="12" cy="8" r="1" fill="currentColor" />
+                                <circle cx="16" cy="8" r="1" fill="currentColor" />
+                            </svg>
+                        </div>
+                        <h3 class="scard-title">Web Design (UI/UX)</h3>
+                        <p class="scard-body">Beautiful, intuitive interfaces that captivate users and enhance
+                            engagement through strategic design thinking.</p>
+                        <a href="services.html#web-design" class="scard-link">Learn More →</a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="scard scard-featured">
+                        <div class="scard-icon">
+                            <svg width="26" height="26" viewBox="0 0 32 32" fill="none">
+                                <path d="M16 4L4 10L16 16L28 10L16 4Z" stroke="currentColor" stroke-width="2"
+                                    stroke-linejoin="round" />
+                                <path d="M4 16L16 22L28 16" stroke="currentColor" stroke-width="2"
+                                    stroke-linejoin="round" />
+                                <path d="M4 22L16 28L28 22" stroke="currentColor" stroke-width="2"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <h3 class="scard-title">Web Development</h3>
+                        <p class="scard-body">Fast, secure, and scalable websites built with cutting-edge technology and
+                            best coding practices.</p>
+                        <a href="services.html#web-development" class="scard-link">Learn More →</a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="scard">
+                        <div class="scard-icon">
+                            <svg width="26" height="26" viewBox="0 0 32 32" fill="none">
+                                <rect x="4" y="8" width="24" height="16" rx="2" stroke="currentColor"
+                                    stroke-width="2" />
+                                <path d="M12 16L14 18L20 12" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <h3 class="scard-title">E-commerce Solutions</h3>
+                        <p class="scard-body">Complete online stores optimised for conversions, with seamless checkout
+                            and powerful features.</p>
+                        <a href="services.html#ecommerce" class="scard-link">Learn More →</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <a href="services.html" class="btn-outline-br">Explore All Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         PORTFOLIO
+    ═══════════════════════════════════════════ -->
+    <section class="pf-section" id="portfolio">
+        <div class="container-xl">
+            <div class="sec-head text-center">
+                <span class="sec-chip">Our Work</span>
+                <h2 class="sec-title">Case Studies That Speak Results</h2>
+                <p class="sec-sub">Real projects, real impact. See how we've helped businesses achieve their digital
+                    goals</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="pcard">
+                        <!-- Canvas-painted project image -->
+                        <div class="pcard-visual">
+                            <canvas id="pfCanvas1" class="pcard-canvas"></canvas>
+                            <div class="pcard-overlay">
+                                <a href="portfolio.html#project1" class="pcard-btn">View Case Study</a>
+                            </div>
+                        </div>
+                        <div class="pcard-body">
+                            <div class="pcard-tags">
+                                <span class="ptag">Education</span>
+                                <span class="ptag">Web Design</span>
+                            </div>
+                            <h3 class="pcard-title">GreatKey Educational Consult</h3>
+                            <p class="pcard-desc">Unlocking potential with a comprehensive educational platform and
+                                resource hub</p>
+                            <div class="pcard-metrics">
+                                <div class="pmetric">
+                                    <span class="pm-val">200%</span>
+                                    <span class="pm-lbl">Enrollment</span>
+                                </div>
+                                <div class="pmetric">
+                                    <span class="pm-val">50+</span>
+                                    <span class="pm-lbl">Courses</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="pcard">
+                        <div class="pcard-visual">
+                            <canvas id="pfCanvas2" class="pcard-canvas"></canvas>
+                            <div class="pcard-overlay">
+                                <a href="portfolio.html#project2" class="pcard-btn">View Case Study</a>
+                            </div>
+                        </div>
+                        <div class="pcard-body">
+                            <div class="pcard-tags">
+                                <span class="ptag">E-commerce</span>
+                                <span class="ptag">Fashion</span>
+                            </div>
+                            <h3 class="pcard-title">BGBrand (House of BG)</h3>
+                            <p class="pcard-desc">Premium fashion brand showcasing unique style and global elegance</p>
+                            <div class="pcard-metrics">
+                                <div class="pmetric">
+                                    <span class="pm-val">3x</span>
+                                    <span class="pm-lbl">Engagement</span>
+                                </div>
+                                <div class="pmetric">
+                                    <span class="pm-val">Global</span>
+                                    <span class="pm-lbl">Reach</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <a href="portfolio.html" class="btn-brand">View Full Portfolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         TESTIMONIALS
+    ═══════════════════════════════════════════ -->
+    <section class="tsti-section">
+        <div class="container-xl">
+            <div class="sec-head text-center">
+                <span class="sec-chip">Client Love</span>
+                <h2 class="sec-title">What Our Clients Say</h2>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="tcard">
+                        <div class="tcard-bar"></div>
+                        <div class="tcard-stars">★★★★★</div>
+                        <p class="tcard-quote">"Working with BrAbel was an amazing experience. They created a stunning
+                            website for BGBrand that perfectly captures our vision. Professional, creative, and truly
+                            committed to excellence!"</p>
+                        <div class="tcard-author">
+                            <div class="tcard-av">BA</div>
+                            <div>
+                                <div class="tcard-name">Betty Ampomaa</div>
+                                <div class="tcard-role">Founder, BGBrand</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="tcard">
+                        <div class="tcard-bar"></div>
+                        <div class="tcard-stars">★★★★★</div>
+                        <p class="tcard-quote">"BrAbel delivered exactly what we needed for Great Key Educational
+                            Consult. The website is professional, user-friendly, and has helped us reach more students.
+                            Highly recommended!"</p>
+                        <div class="tcard-author">
+                            <div class="tcard-av">KN</div>
+                            <div>
+                                <div class="tcard-name">Kwame Nkrumah</div>
+                                <div class="tcard-role">CEO, Great Key Educational Consult</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-col">
-                    <a href="index.html" class="footer-logo">
-                        <span class="logo-pixel">BrAbel</span><span class="logo-craft">Studios</span>
+    <!-- ═══════════════════════════════════════════
+         CTA — Canvas Wave Background
+    ═══════════════════════════════════════════ -->
+    <section class="cta-section" id="cta">
+        <canvas id="ctaCanvas" class="cta-canvas"></canvas>
+
+        <div class="container-xl position-relative" style="z-index:2">
+            <div class="cta-box">
+                <div class="row align-items-center gy-4">
+                    <div class="col-lg-7">
+                        <h2 class="cta-h2">Ready to Transform Your Online Presence?</h2>
+                        <p class="cta-p">Let's discuss your project and create a website that drives real business
+                            results. Get a free consultation and quote today.</p>
+                        <div class="cta-btns">
+                            <a href="contact.html" class="btn-brand">
+                                Get a Free Quote
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" />
+                                </svg>
+                            </a>
+                            <a href="tel:+233509563068" class="btn-ghost">
+                                <svg width="16" height="16" viewBox="0 0 20 20" fill="none">
+                                    <path
+                                        d="M18 14v3a2 2 0 01-2.18 2A19.79 19.79 0 013 6.18 2 2 0 015 4h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 12.8a16 16 0 006.11 6.11l2.16-2.16a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0118 18z"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                </svg>
+                                Call Us Now
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="cta-chips">
+                            <div class="cta-chip">
+                                <span class="cta-chip-ic">✓</span> Fast Delivery
+                            </div>
+                            <div class="cta-chip">
+                                <span class="cta-chip-ic">★</span> Premium Quality
+                            </div>
+                            <div class="cta-chip">
+                                <span class="cta-chip-ic">♥</span> Client Focused
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         FOOTER
+    ═══════════════════════════════════════════ -->
+    <footer class="bfooter">
+        <div class="bfooter-topline"></div>
+        <div class="container-xl">
+            <div class="row gy-5">
+
+                <div class="col-lg-4">
+                    <a href="index.html" class="bfooter-logo">
+                        <span class="lp">Br</span><span class="lc">Abel</span>
                     </a>
-                    <p class="footer-description">
-                        Creating stunning, high-converting websites for startups and growing businesses since 2024.
-                    </p>
-                    <div class="social-links">
-                        <a href="mailto:brabelstudios@gmail.com" aria-label="Email" class="social-link">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                                <polyline points="22,6 12,13 2,6"/>
+                    <p class="bfooter-desc">Creating stunning, high-converting websites for startups and growing
+                        businesses since 2024.</p>
+                    <div class="bfooter-socials">
+                        <a href="mailto:hello@brabel.solutions" class="fsoc" aria-label="Email">
+                            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
                             </svg>
                         </a>
-                        <a href="tel:+233509563068" aria-label="Phone" class="social-link">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.66A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/>
+                        <a href="tel:+233509563068" class="fsoc" aria-label="Phone">
+                            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.66A2 2 0 012 0h3a2 2 0 012 1.72 17.18 17.18 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 17.18 17.18 0 002.81.7A2 2 0 0122 14.92z" />
                             </svg>
                         </a>
-                        <a href="https://wa.me/233509563068" aria-label="WhatsApp" class="social-link" target="_blank" rel="noopener">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                        <a href="https://wa.me/233509563068" class="fsoc" aria-label="WhatsApp" target="_blank"
+                            rel="noopener">
+                            <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
                             </svg>
                         </a>
                     </div>
                 </div>
 
-                <div class="footer-col">
-                    <h4 class="footer-heading">Company</h4>
-                    <ul class="footer-links">
+                <div class="col-6 col-lg-2 offset-lg-1">
+                    <h5 class="bfooter-h">Company</h5>
+                    <ul class="bfooter-list">
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="portfolio.html">Portfolio</a></li>
                         <li><a href="process.html">Our Process</a></li>
@@ -529,22 +464,22 @@
                     </ul>
                 </div>
 
-                <div class="footer-col">
-                    <h4 class="footer-heading">Services</h4>
-                    <ul class="footer-links">
+                <div class="col-6 col-lg-2">
+                    <h5 class="bfooter-h">Services</h5>
+                    <ul class="bfooter-list">
                         <li><a href="services.html#web-design">Web Design</a></li>
-                        <li><a href="services.html#web-development">Web Development</a></li>
+                        <li><a href="services.html#web-development">Web Dev</a></li>
                         <li><a href="services.html#ecommerce">E-commerce</a></li>
-                        <li><a href="services.html#redesign">Website Redesign</a></li>
+                        <li><a href="services.html#redesign">Redesign</a></li>
                         <li><a href="services.html#maintenance">Maintenance</a></li>
                     </ul>
                 </div>
 
-                <div class="footer-col">
-                    <h4 class="footer-heading">Get In Touch</h4>
-                    <ul class="footer-contact">
+                <div class="col-lg-3">
+                    <h5 class="bfooter-h">Get In Touch</h5>
+                    <ul class="bfooter-contact">
                         <li>
-                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
                                 <path
                                     d="M14 11.2v2.4a1.6 1.6 0 01-1.744 1.6A15.832 15.832 0 012.544 4.944 1.6 1.6 0 014.144 3.2h2.4a1.6 1.6 0 011.6 1.376c.102.768.289 1.522.56 2.248a1.6 1.6 0 01-.36 1.688L6.872 10.24a12.8 12.8 0 004.888 4.888l1.728-1.472a1.6 1.6 0 011.688-.36c.726.271 1.48.458 2.248.56A1.6 1.6 0 0114 14.4z"
                                     stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
@@ -553,7 +488,7 @@
                             +233 50 956 3068
                         </li>
                         <li>
-                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
                                 <path
                                     d="M2.667 2.667h10.666c.734 0 1.334.6 1.334 1.333v8c0 .733-.6 1.333-1.334 1.333H2.667c-.734 0-1.334-.6-1.334-1.333V4c0-.733.6-1.333 1.334-1.333z"
                                     stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
@@ -561,25 +496,25 @@
                                 <path d="M14.667 4L8 8.667 1.333 4" stroke="currentColor" stroke-width="1.5"
                                     stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
-                            brabelstudios@gmail.com
+                            hello@brabel.solutions
                         </li>
                         <li>
-                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
                                 <path d="M14 6.667c0 4.666-6 8.666-6 8.666s-6-4-6-8.666a6 6 0 0112 0z"
                                     stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
                                     stroke-linejoin="round" />
-                                <circle cx="8" cy="6.667" r="2" stroke="currentColor" stroke-width="1.5"
-                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <circle cx="8" cy="6.667" r="2" stroke="currentColor" stroke-width="1.5" />
                             </svg>
                             Serving Clients Worldwide
                         </li>
                     </ul>
                 </div>
+
             </div>
 
-            <div class="footer-bottom">
-                <p>&copy; 2026 BrAbel Studios. All rights reserved.</p>
-                <div class="footer-legal">
+            <div class="bfooter-bottom">
+                <p class="mb-0">&copy; 2026 BrAbel. All rights reserved.</p>
+                <div class="bfooter-legal">
                     <a href="privacy.html">Privacy Policy</a>
                     <a href="terms.html">Terms of Service</a>
                 </div>
@@ -588,7 +523,9 @@
     </footer>
 
     <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/home.js"></script>
 </body>
 
 </html>
