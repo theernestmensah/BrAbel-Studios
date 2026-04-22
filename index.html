@@ -1,452 +1,735 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Professional web design and development services for startups and SMBs. Transform your online presence with modern, high-converting websites.">
-    <meta name="keywords" content="web design, web development, UI/UX, e-commerce, website redesign">
 
+    <!-- Primary SEO -->
+    <title>BrAbel Professional Web & Software Development Agency | Ghana</title>
+    <meta name="description"
+        content="BrAbel builds high-converting websites and custom software for startups and SMBs. Modern UI/UX, fast performance, SaaS & e-commerce ready. Get a free quote today.">
+    <meta name="keywords"
+        content="web design Ghana, custom software development, web applications, SaaS development, e-commerce website, BrAbel">
+    <meta name="author" content="BrAbel">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://brabel.solutions/">
+
+    <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://brabel.solutions/">
-    <meta property="og:title" content="BrAbel - Modern Web Design & Development">
-    <meta property="og:description" content="Professional web design and development services for startups and SMBs.">
+    <meta property="og:title" content="BrAbel  Professional Web & Software Development Agency">
+    <meta property="og:description"
+        content="High-converting websites and custom software solutions for startups and growing businesses.">
     <meta property="og:image" content="https://brabel.solutions/assets/images/logo.jpeg">
     <meta property="og:site_name" content="BrAbel">
+    <meta property="og:locale" content="en_GB">
 
+    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://brabel.solutions/">
-    <meta name="twitter:title" content="BrAbel - Modern Web Design & Development">
-    <meta name="twitter:description" content="Professional web design and development services for startups and SMBs.">
+    <meta name="twitter:title" content="BrAbel  Professional Web & Software Development Agency">
+    <meta name="twitter:description"
+        content="High-converting websites and custom software solutions for startups and growing businesses.">
     <meta name="twitter:image" content="https://brabel.solutions/assets/images/logo.jpeg">
-    <title>BrAbel - Modern Web Design & Development</title>
 
+    <!-- Favicon -->
     <link rel="icon" type="image/jpeg" href="assets/images/logo.jpeg">
     <link rel="apple-touch-icon" href="assets/images/logo.jpeg">
 
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap"
         rel="stylesheet">
 
+    <!-- Bootstrap 5.3 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+    <!-- Styles -->
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/home.css">
-    <link rel="canonical" href="https://brabel.solutions/">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "BrAbel",
+      "description": "Professional web and software development services for startups and SMBs.",
+      "url": "https://brabel.solutions",
+      "telephone": "+233209895858",
+      "email": "hello@brabel.solutions",
+      "areaServed": "Worldwide",
+      "serviceType": ["Web Design", "Software Development", "Web Applications", "E-commerce"]
+    }
+    </script>
 </head>
 
 <body>
 
-    <!-- ═══════════════════════════════════════════
+    <!-- -------------------------------------------
+         SKIP LINK (WCAG � keyboard users)
+    ------------------------------------------- -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- -------------------------------------------
          NAVIGATION
-    ═══════════════════════════════════════════ -->
-    <nav id="navbar" class="bnav">
-        <div class="bnav-inner container-xl">
-            <a href="index.html" class="bnav-logo">
-                <span class="lp">Br</span><span class="lc">Abel</span>
-            </a>
+    ------------------------------------------- -->
+    <header>
+        <nav id="navbar" class="bnav" role="navigation" aria-label="Main navigation">
+            <div class="bnav-inner container-xl">
+                <a href="index.html" class="bnav-logo" aria-label="BrAbel � home">
+                    <span class="lp" aria-hidden="true">Br</span><span class="lc">Abel</span>
+                </a>
 
-            <ul class="bnav-links" id="navMenu">
-                <li><a href="index.html" class="nl active">Home</a></li>
-                <li><a href="about.html" class="nl">About</a></li>
-                <li><a href="services.html" class="nl">Services</a></li>
-                <li><a href="portfolio.html" class="nl">Portfolio</a></li>
-                <li><a href="process.html" class="nl">Process</a></li>
-                <li><a href="pricing.html" class="nl">Pricing</a></li>
-                <li><a href="contact.html" class="nl-cta">Get a Quote</a></li>
-            </ul>
+                <ul class="bnav-links" id="navMenu" role="list">
+                    <li role="listitem"><a href="index.html" class="nl active" aria-current="page">Home</a></li>
+                    <li role="listitem"><a href="about.html" class="nl">About</a></li>
+                    <li role="listitem"><a href="services.html" class="nl">Services</a></li>
+                    <li role="listitem"><a href="portfolio.html" class="nl">Portfolio</a></li>
+                    <li role="listitem"><a href="process.html" class="nl">Process</a></li>
+                    <li role="listitem"><a href="pricing.html" class="nl">Pricing</a></li>
+                    <li role="listitem">
+                        <a href="contact.html" class="nl-cta" aria-label="Get a free quote from BrAbel">Get a Quote</a>
+                    </li>
+                </ul>
 
-            <button class="bnav-toggle" id="mobileToggle" aria-label="Menu">
-                <span></span><span></span><span></span>
-            </button>
-        </div>
-    </nav>
-
-    <!-- ═══════════════════════════════════════════
-         HERO — Canvas Aurora Background
-    ═══════════════════════════════════════════ -->
-    <section class="hero-wrap" id="hero">
-        <canvas id="heroCanvas" class="hero-canvas"></canvas>
-
-        <div class="hero-content container-xl">
-            <div class="row align-items-center min-vh-100 py-5">
-
-                <!-- Left: Text -->
-                <div class="col-lg-6 hero-left">
-                    <div class="hero-pill">
-                        <span class="hero-pill-dot"></span>
-                        Growing Portfolio
-                    </div>
-
-                    <h1 class="hero-h1">
-                        Transform Your Business with
-                        <span class="h1-grad">Award-Winning</span>
-                        Web Design
-                    </h1>
-
-                    <p class="hero-p">
-                        We help startups and growing businesses stand out online with
-                        stunning, high-converting websites that drive real results.
-                    </p>
-
-                    <div class="hero-btns">
-                        <a href="contact.html" class="btn-brand">
-                            Get a Free Quote
-                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" />
-                            </svg>
-                        </a>
-                        <a href="portfolio.html" class="btn-ghost">View Our Work</a>
-                    </div>
-
-                    <div class="hero-stats">
-                        <div class="hstat">
-                            <span class="hstat-n">4+</span>
-                            <span class="hstat-l">Active Projects</span>
-                        </div>
-                        <div class="hstat-div"></div>
-                        <div class="hstat">
-                            <span class="hstat-n">100%</span>
-                            <span class="hstat-l">Client Satisfaction</span>
-                        </div>
-                        <div class="hstat-div"></div>
-                        <div class="hstat">
-                            <span class="hstat-n">2+</span>
-                            <span class="hstat-l">Years Experience</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Right: Canvas-drawn mockup panel -->
-                <div class="col-lg-6 hero-right d-flex justify-content-center mt-5 mt-lg-0">
-                    <div class="hero-canvas-panel">
-                        <canvas id="mockupCanvas" class="mockup-canvas"></canvas>
-                    </div>
-                </div>
-
+                <button class="bnav-toggle" id="mobileToggle" aria-label="Toggle mobile navigation menu"
+                    aria-expanded="false" aria-controls="navMenu">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </button>
             </div>
-        </div>
-    </section>
+        </nav>
+    </header>
 
-    <!-- ═══════════════════════════════════════════
-         TRUSTED BY
-    ═══════════════════════════════════════════ -->
-    <section class="trusted-bar">
-        <div class="container-xl">
-            <p class="trusted-eyebrow">Trusted by innovative businesses</p>
-            <div class="trusted-logos">
+    <main id="main-content"> <!-- -------------------------------------------
+         HERO — 10 Trillion Cedi Edition
+     ------------------------------------------- -->
+        <section class="hero-wrap hero-power" id="hero" aria-label="Hero — BrAbel web design agency">
 
-                <div class="tlogo">
-                    <span class="tl-word">BG<span class="tl-accent">BRAND</span></span>
-                </div>
-
-                <div class="tlogo">
-                    <div class="tl-icon-row">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
-                            <path
-                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15l-4-4 1.41-1.41L11 14.17l7.59-7.59L20 8l-9 9z"
-                                fill="#1e3a8a" />
-                        </svg>
-                        <div class="tl-text">
-                            <span class="tl-name">Great Key</span>
-                            <span class="tl-sub">Educational Consult</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- ═══════════════════════════════════════════
-         SERVICES — Canvas Geo Background
-    ═══════════════════════════════════════════ -->
-    <section class="svc-section" id="services">
-        <canvas id="svcCanvas" class="svc-canvas"></canvas>
-
-        <div class="container-xl position-relative" style="z-index:2">
-            <div class="sec-head text-center">
-                <span class="sec-chip">What We Do</span>
-                <h2 class="sec-title">Services That Drive Growth</h2>
-                <p class="sec-sub">End-to-end digital solutions designed to elevate your brand and convert visitors into
-                    customers</p>
+            <!-- Aurora orb layer -->
+            <div class="hero-aurora" aria-hidden="true">
+                <div class="aurora-orb aurora-orb-1"></div>
+                <div class="aurora-orb aurora-orb-2"></div>
+                <div class="aurora-orb aurora-orb-3"></div>
+                <div class="aurora-grid"></div>
             </div>
 
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="scard">
-                        <div class="scard-icon">
-                            <svg width="26" height="26" viewBox="0 0 32 32" fill="none">
-                                <rect x="4" y="4" width="24" height="24" rx="2" stroke="currentColor"
-                                    stroke-width="2" />
-                                <path d="M4 12H28" stroke="currentColor" stroke-width="2" />
-                                <circle cx="8" cy="8" r="1" fill="currentColor" />
-                                <circle cx="12" cy="8" r="1" fill="currentColor" />
-                                <circle cx="16" cy="8" r="1" fill="currentColor" />
-                            </svg>
+            <canvas id="heroCanvas" class="hero-canvas" aria-hidden="true"></canvas>
+
+            <div class="hero-pw-inner container-xl">
+                <div class="row align-items-center gx-5 hero-pw-row">
+
+                    <!-- Left: Statement -->
+                    <div class="col-lg-6 hero-pw-left">
+
+                        <div class="hero-pw-badge" role="note">
+                            <span class="hero-pw-dot" aria-hidden="true"></span>
+                            Available for new projects
                         </div>
-                        <h3 class="scard-title">Web Design (UI/UX)</h3>
-                        <p class="scard-body">Beautiful, intuitive interfaces that captivate users and enhance
-                            engagement through strategic design thinking.</p>
-                        <a href="services.html#web-design" class="scard-link">Learn More →</a>
-                    </div>
-                </div>
 
-                <div class="col-md-4">
-                    <div class="scard scard-featured">
-                        <div class="scard-icon">
-                            <svg width="26" height="26" viewBox="0 0 32 32" fill="none">
-                                <path d="M16 4L4 10L16 16L28 10L16 4Z" stroke="currentColor" stroke-width="2"
-                                    stroke-linejoin="round" />
-                                <path d="M4 16L16 22L28 16" stroke="currentColor" stroke-width="2"
-                                    stroke-linejoin="round" />
-                                <path d="M4 22L16 28L28 22" stroke="currentColor" stroke-width="2"
-                                    stroke-linejoin="round" />
-                            </svg>
-                        </div>
-                        <h3 class="scard-title">Web Development</h3>
-                        <p class="scard-body">Fast, secure, and scalable websites built with cutting-edge technology and
-                            best coding practices.</p>
-                        <a href="services.html#web-development" class="scard-link">Learn More →</a>
-                    </div>
-                </div>
+                        <h1 class="hero-pw-h1">
+                            <span class="hero-line-1">We Build</span>
+                            <span class="hero-line-2">Digital</span>
+                            <span class="hero-pw-grad hero-line-3">Empires.</span>
+                        </h1>
 
-                <div class="col-md-4">
-                    <div class="scard">
-                        <div class="scard-icon">
-                            <svg width="26" height="26" viewBox="0 0 32 32" fill="none">
-                                <rect x="4" y="8" width="24" height="16" rx="2" stroke="currentColor"
-                                    stroke-width="2" />
-                                <path d="M12 16L14 18L20 12" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </div>
-                        <h3 class="scard-title">E-commerce Solutions</h3>
-                        <p class="scard-body">Complete online stores optimised for conversions, with seamless checkout
-                            and powerful features.</p>
-                        <a href="services.html#ecommerce" class="scard-link">Learn More →</a>
-                    </div>
-                </div>
-            </div>
+                        <p class="hero-pw-lead">
+                            Ghana's most ambitious web &amp; software studio. We engineer high-converting digital
+                            experiences and scalable bespoke software for startups and enterprises that refuse to be
+                            ordinary.
+                        </p>
 
-            <div class="text-center mt-5">
-                <a href="services.html" class="btn-outline-br">Explore All Services</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- ═══════════════════════════════════════════
-         PORTFOLIO
-    ═══════════════════════════════════════════ -->
-    <section class="pf-section" id="portfolio">
-        <div class="container-xl">
-            <div class="sec-head text-center">
-                <span class="sec-chip">Our Work</span>
-                <h2 class="sec-title">Case Studies That Speak Results</h2>
-                <p class="sec-sub">Real projects, real impact. See how we've helped businesses achieve their digital
-                    goals</p>
-            </div>
-
-            <div class="row g-4">
-                <div class="col-md-6">
-                    <div class="pcard">
-                        <!-- Canvas-painted project image -->
-                        <div class="pcard-visual">
-                            <canvas id="pfCanvas1" class="pcard-canvas"></canvas>
-                            <div class="pcard-overlay">
-                                <a href="portfolio.html#project1" class="pcard-btn">View Case Study</a>
-                            </div>
-                        </div>
-                        <div class="pcard-body">
-                            <div class="pcard-tags">
-                                <span class="ptag">Education</span>
-                                <span class="ptag">Web Design</span>
-                            </div>
-                            <h3 class="pcard-title">GreatKey Educational Consult</h3>
-                            <p class="pcard-desc">Unlocking potential with a comprehensive educational platform and
-                                resource hub</p>
-                            <div class="pcard-metrics">
-                                <div class="pmetric">
-                                    <span class="pm-val">200%</span>
-                                    <span class="pm-lbl">Enrollment</span>
-                                </div>
-                                <div class="pmetric">
-                                    <span class="pm-val">50+</span>
-                                    <span class="pm-lbl">Courses</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="pcard">
-                        <div class="pcard-visual">
-                            <canvas id="pfCanvas2" class="pcard-canvas"></canvas>
-                            <div class="pcard-overlay">
-                                <a href="portfolio.html#project2" class="pcard-btn">View Case Study</a>
-                            </div>
-                        </div>
-                        <div class="pcard-body">
-                            <div class="pcard-tags">
-                                <span class="ptag">E-commerce</span>
-                                <span class="ptag">Fashion</span>
-                            </div>
-                            <h3 class="pcard-title">BGBrand (House of BG)</h3>
-                            <p class="pcard-desc">Premium fashion brand showcasing unique style and global elegance</p>
-                            <div class="pcard-metrics">
-                                <div class="pmetric">
-                                    <span class="pm-val">3x</span>
-                                    <span class="pm-lbl">Engagement</span>
-                                </div>
-                                <div class="pmetric">
-                                    <span class="pm-val">Global</span>
-                                    <span class="pm-lbl">Reach</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="text-center mt-5">
-                <a href="portfolio.html" class="btn-brand">View Full Portfolio</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- ═══════════════════════════════════════════
-         TESTIMONIALS
-    ═══════════════════════════════════════════ -->
-    <section class="tsti-section">
-        <div class="container-xl">
-            <div class="sec-head text-center">
-                <span class="sec-chip">Client Love</span>
-                <h2 class="sec-title">What Our Clients Say</h2>
-            </div>
-
-            <div class="row g-4">
-                <div class="col-md-6">
-                    <div class="tcard">
-                        <div class="tcard-bar"></div>
-                        <div class="tcard-stars">★★★★★</div>
-                        <p class="tcard-quote">"Working with BrAbel was an amazing experience. They created a stunning
-                            website for BGBrand that perfectly captures our vision. Professional, creative, and truly
-                            committed to excellence!"</p>
-                        <div class="tcard-author">
-                            <div class="tcard-av">BA</div>
-                            <div>
-                                <div class="tcard-name">Betty Ampomaa</div>
-                                <div class="tcard-role">Founder, BGBrand</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="tcard">
-                        <div class="tcard-bar"></div>
-                        <div class="tcard-stars">★★★★★</div>
-                        <p class="tcard-quote">"BrAbel delivered exactly what we needed for Great Key Educational
-                            Consult. The website is professional, user-friendly, and has helped us reach more students.
-                            Highly recommended!"</p>
-                        <div class="tcard-author">
-                            <div class="tcard-av">KN</div>
-                            <div>
-                                <div class="tcard-name">Kwame Nkrumah</div>
-                                <div class="tcard-role">CEO, Great Key Educational Consult</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ═══════════════════════════════════════════
-         CTA — Canvas Wave Background
-    ═══════════════════════════════════════════ -->
-    <section class="cta-section" id="cta">
-        <canvas id="ctaCanvas" class="cta-canvas"></canvas>
-
-        <div class="container-xl position-relative" style="z-index:2">
-            <div class="cta-box">
-                <div class="row align-items-center gy-4">
-                    <div class="col-lg-7">
-                        <h2 class="cta-h2">Ready to Transform Your Online Presence?</h2>
-                        <p class="cta-p">Let's discuss your project and create a website that drives real business
-                            results. Get a free consultation and quote today.</p>
-                        <div class="cta-btns">
-                            <a href="contact.html" class="btn-brand">
-                                Get a Free Quote
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                    <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" />
+                        <div class="hero-pw-btns">
+                            <a href="contact.html" class="btn-hero-primary" aria-label="Start your project with BrAbel">
+                                <span class="btn-hero-glow" aria-hidden="true"></span>
+                                Start a Project
+                                <svg width="18" height="18" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                                    <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2.4"
+                                        stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
                             </a>
-                            <a href="tel:+233509563068" class="btn-ghost">
-                                <svg width="16" height="16" viewBox="0 0 20 20" fill="none">
+                            <a href="portfolio.html" class="btn-ghost" aria-label="View our work">See Our Work</a>
+                        </div>
+
+                        <!-- Micro stats -->
+                        <div class="hero-pw-microstats" role="list" aria-label="Key stats">
+                            <div class="hpms-item" role="listitem">
+                                <strong>100%</strong>
+                                <span>Client Satisfaction</span>
+                            </div>
+                            <span class="hpms-sep" aria-hidden="true">·</span>
+                            <div class="hpms-item" role="listitem">
+                                <strong>4+</strong>
+                                <span>Projects Delivered</span>
+                            </div>
+                            <span class="hpms-sep" aria-hidden="true">·</span>
+                            <div class="hpms-item" role="listitem">
+                                <strong>2+</strong>
+                                <span>Years Active</span>
+                            </div>
+                        </div>
+
+                        <!-- Trust logos -->
+                        <div class="hero-trust-row" aria-label="Trusted by">
+                            <span class="hero-trust-lbl">Trusted by</span>
+                            <span class="hero-trust-badge">Great Key</span>
+                            <span class="hero-trust-badge">GripNGo</span>
+                            <span class="hero-trust-badge">TEIN-KsTU</span>
+                        </div>
+
+                    </div>
+
+                    <!-- Right: Stat Cards -->
+                    <div class="col-lg-6 hero-pw-right" aria-label="BrAbel agency highlights">
+
+                        <div class="hero-dash-wrap">
+
+                            <!-- Floating label chip -->
+                            <div class="hdash-chip">
+                                <span class="hdash-chip-dot" aria-hidden="true"></span>
+                                Pixel-Perfect. Delivered Fast.
+                            </div>
+
+                            <!-- Code Editor Card -->
+                            <div class="bra-editor" role="img" aria-label="BrAbel code quality showcase">
+
+                                <!-- Editor chrome -->
+                                <div class="bra-ed-chrome">
+                                    <span class="bra-ed-dot" style="background:#ff5f57"></span>
+                                    <span class="bra-ed-dot" style="background:#ffbd2e"></span>
+                                    <span class="bra-ed-dot" style="background:#28ca41"></span>
+                                    <span class="bra-ed-title">index.html &mdash; BrAbel Studio</span>
+                                    <span class="bra-ed-live"><span class="bra-ed-live-dot"></span>Live</span>
+                                </div>
+
+                                <!-- Line numbers + code -->
+                                <div class="bra-ed-body">
+                                    <div class="bra-ed-lines" aria-hidden="true">
+                                        <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+                                        <span>6</span><span>7</span><span>8</span><span>9</span><span>10</span>
+                                    </div>
+                                    <div class="bra-ed-code" aria-hidden="true">
+                                        <div class="bra-ed-line"><span class="ec-tag">&lt;section</span> <span class="ec-attr">class</span>=<span class="ec-str">"hero"</span><span class="ec-tag">&gt;</span></div>
+                                        <div class="bra-ed-line">  <span class="ec-tag">&lt;h1</span> <span class="ec-attr">class</span>=<span class="ec-str">"title"</span><span class="ec-tag">&gt;</span></div>
+                                        <div class="bra-ed-line">    <span class="ec-str">We Build Digital</span></div>
+                                        <div class="bra-ed-line">    <span class="ec-str">Empires.</span></div>
+                                        <div class="bra-ed-line">  <span class="ec-tag">&lt;/h1&gt;</span></div>
+                                        <div class="bra-ed-line">  <span class="ec-tag">&lt;p</span> <span class="ec-attr">class</span>=<span class="ec-str">"subtitle"</span><span class="ec-tag">&gt;</span></div>
+                                        <div class="bra-ed-line">    <span class="ec-cmt">/* Pixel perfect */</span></div>
+                                        <div class="bra-ed-line">  <span class="ec-tag">&lt;/p&gt;</span></div>
+                                        <div class="bra-ed-line">  <span class="ec-tag">&lt;a</span> <span class="ec-attr">href</span>=<span class="ec-str">"contact.html"</span><span class="ec-tag">&gt;</span></div>
+                                        <div class="bra-ed-line">    <span class="ec-str">Get a Quote</span> <span class="ec-tag">&lt;/a&gt;</span></div>
+                                    </div>
+                                </div>
+
+                                <!-- Status bar -->
+                                <div class="bra-ed-status">
+                                    <span class="bra-ed-status-item">&#x2714; No errors</span>
+                                    <span class="bra-ed-status-item">HTML</span>
+                                    <span class="bra-ed-status-item bra-ed-status-pulse">&#x25CF; Compiling&hellip;</span>
+                                </div>
+
+                            </div><!-- /bra-editor -->
+
+                            <!-- Floating proof card -->
+                            <div class="hdash-proof-card" aria-label="Client rating">
+                                <span class="hdash-proof-stars" aria-hidden="true">★★★★★</span>
+                                <span class="hdash-proof-text">Ghana's Rising Studio</span>
+                            </div>
+
+                        </div><!-- /hero-dash-wrap -->
+
+                    </div>
+
+
+                </div>
+            </div>
+
+            <!-- Scroll hint -->
+            <div class="hero-scroll-hint" aria-hidden="true">
+                <span class="hero-scroll-line"></span>
+                <span class="hero-scroll-text">Scroll</span>
+            </div>
+
+        </section>
+
+        <!-- -------------------------------------------
+         TRUSTED BY � Logo Cloud
+    ------------------------------------------- -->
+        <section class="trusted-bar" aria-label="Trusted by our clients">
+            <div class="container-xl">
+                <p class="trusted-eyebrow">Trusted by innovative businesses</p>
+                <div class="row row-cols-2 row-cols-md-5 g-3 align-items-center justify-content-center trusted-logos">
+
+                    <div class="col d-flex justify-content-center">
+                        <div class="tlogo" aria-label="Great Key Educational Consult client">
+                            <div class="tl-icon-row">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                                     <path
-                                        d="M18 14v3a2 2 0 01-2.18 2A19.79 19.79 0 013 6.18 2 2 0 015 4h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 12.8a16 16 0 006.11 6.11l2.16-2.16a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0118 18z"
-                                        stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15l-4-4 1.41-1.41L11 14.17l7.59-7.59L20 8l-9 9z"
+                                        fill="#1e3a8a" />
                                 </svg>
-                                Call Us Now
-                            </a>
+                                <div class="tl-text">
+                                    <span class="tl-name">Great Key</span>
+                                    <span class="tl-sub">Educational Consult</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-5">
-                        <div class="cta-chips">
-                            <div class="cta-chip">
-                                <span class="cta-chip-ic">✓</span> Fast Delivery
+
+                    <div class="col d-flex justify-content-center">
+                        <div class="tlogo" aria-label="BuildFor You client">
+                            <span class="tl-word">BuildFor<span class="tl-accent">You</span></span>
+                        </div>
+                    </div>
+
+                    <div class="col d-flex justify-content-center">
+                        <div class="tlogo" aria-label="GripNGo client">
+                            <span class="tl-word">GripN<span class="tl-accent">Go</span></span>
+                        </div>
+                    </div>
+
+                    <div class="col d-flex justify-content-center">
+                        <div class="tlogo" aria-label="TEIN-KsTU client">
+                            <span class="tl-word">TEIN-<span class="tl-accent">KsTU</span></span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- -------------------------------------------
+         SERVICES � Canvas Geo Background
+    ------------------------------------------- -->
+        <section class="svc-section" id="services" aria-labelledby="services-heading">
+            <canvas id="svcCanvas" class="svc-canvas" aria-hidden="true"></canvas>
+
+            <div class="container-xl position-relative" style="z-index:2">
+                <div class="sec-head text-center">
+                    <span class="sec-chip" aria-hidden="true">What We Do</span>
+                    <h2 class="sec-title" id="services-heading">Services That Drive Growth</h2>
+                    <p class="sec-sub">End-to-end digital solutions designed to elevate your brand and convert visitors
+                        into customers</p>
+                </div>
+
+                <div class="row g-4">
+
+                    <div class="col-md-4">
+                        <article class="scard" aria-labelledby="svc-design-title">
+                            <div class="scard-icon" aria-hidden="true">
+                                <i data-lucide="layout-dashboard" width="24" height="24"></i>
                             </div>
-                            <div class="cta-chip">
-                                <span class="cta-chip-ic">★</span> Premium Quality
+                            <h3 class="scard-title" id="svc-design-title">Web Design (UI/UX)</h3>
+                            <p class="scard-body">Beautiful, intuitive interfaces that captivate users and enhance
+                                engagement through strategic design thinking.</p>
+                            <a href="services.html#web-design" class="scard-link"
+                                aria-label="Learn more about our web design services">Learn More →</a>
+                        </article>
+                    </div>
+
+                    <div class="col-md-4">
+                        <article class="scard scard-featured" aria-labelledby="svc-dev-title">
+                            <div class="scard-badge" aria-label="Most popular service">Most Popular</div>
+                            <div class="scard-icon" aria-hidden="true">
+                                <i data-lucide="code-2" width="24" height="24"></i>
                             </div>
-                            <div class="cta-chip">
-                                <span class="cta-chip-ic">♥</span> Client Focused
+                            <h3 class="scard-title" id="svc-dev-title">Web Development</h3>
+                            <p class="scard-body">Fast, secure, and scalable websites built with cutting-edge technology
+                                and best coding practices.</p>
+                            <a href="services.html#web-development" class="scard-link"
+                                aria-label="Learn more about our web development services">Learn More →</a>
+                        </article>
+                    </div>
+
+                    <div class="col-md-4">
+                        <article class="scard" aria-labelledby="svc-ecom-title">
+                            <div class="scard-icon" aria-hidden="true">
+                                <i data-lucide="shopping-cart" width="24" height="24"></i>
+                            </div>
+                            <h3 class="scard-title" id="svc-ecom-title">E-commerce Solutions</h3>
+                            <p class="scard-body">Complete online stores optimised for conversions, with seamless
+                                checkout and powerful product management.</p>
+                            <a href="services.html#ecommerce" class="scard-link"
+                                aria-label="Learn more about our e-commerce services">Learn More →</a>
+                        </article>
+                    </div>
+
+                </div>
+
+                <!-- Extra services row -->
+                <div class="row g-4 mt-1">
+                    <div class="col-md-4">
+                        <article class="scard" aria-labelledby="svc-seo-title">
+                            <div class="scard-icon" aria-hidden="true">
+                                <i data-lucide="search" width="24" height="24"></i>
+                            </div>
+                            <h3 class="scard-title" id="svc-seo-title">SEO Optimisation</h3>
+                            <p class="scard-body">Every site we build is engineered for Google � semantic HTML, Core Web
+                                Vitals, and structured data baked in.</p>
+                            <a href="services.html#seo" class="scard-link"
+                                aria-label="Learn more about our SEO services">Learn More →</a>
+                        </article>
+                    </div>
+                    <div class="col-md-4">
+                        <article class="scard" aria-labelledby="svc-software-title">
+                            <div class="scard-icon" aria-hidden="true">
+                                <i data-lucide="cpu" width="24" height="24"></i>
+                            </div>
+                            <h3 class="scard-title" id="svc-software-title">Custom Software</h3>
+                            <p class="scard-body">Tailor-made software solutions, SaaS platforms, and enterprise web
+                                applications that streamline operations.</p>
+                            <a href="services.html#custom-software" class="scard-link"
+                                aria-label="Learn more about our software services">Learn More →</a>
+                        </article>
+                    </div>
+                    <div class="col-md-4">
+                        <article class="scard" aria-labelledby="svc-maint-title">
+                            <div class="scard-icon" aria-hidden="true">
+                                <i data-lucide="shield-check" width="24" height="24"></i>
+                            </div>
+                            <h3 class="scard-title" id="svc-maint-title">Maintenance & Support</h3>
+                            <p class="scard-body">Keep your site fast, secure, and up-to-date. We offer monthly
+                                maintenance plans with priority support.</p>
+                            <a href="services.html#maintenance" class="scard-link"
+                                aria-label="Learn more about maintenance services">Learn More →</a>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="text-center mt-5">
+                    <a href="services.html" class="btn-outline-br" aria-label="Explore all BrAbel services">Explore All
+                        Services</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- -------------------------------------------
+         PORTFOLIO
+    ------------------------------------------- -->
+        <section class="pf-section" id="portfolio" aria-labelledby="portfolio-heading">
+            <div class="container-xl">
+                <div class="sec-head text-center">
+                    <span class="sec-chip" aria-hidden="true">Our Work</span>
+                    <h2 class="sec-title" id="portfolio-heading">Case Studies That Speak Results</h2>
+                    <p class="sec-sub">Real projects, real impact. See how we've helped businesses achieve their digital
+                        goals</p>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <article class="pcard" aria-labelledby="proj1-title">
+                            <div class="pcard-visual">
+                                <canvas id="pfCanvas1" class="pcard-canvas" role="img"
+                                    aria-label="GreatKey Educational Consult website illustration � blue teal academic theme"></canvas>
+                                <div class="pcard-overlay" aria-hidden="true">
+                                    <a href="portfolio.html#project1" class="pcard-btn" tabindex="-1"
+                                        aria-hidden="true">View Case Study</a>
+                                </div>
+                            </div>
+                            <div class="pcard-body">
+                                <div class="pcard-tags" aria-label="Project categories">
+                                    <span class="ptag">Education</span>
+                                    <span class="ptag">Web Design</span>
+                                </div>
+                                <h3 class="pcard-title" id="proj1-title">GreatKey Educational Consult</h3>
+                                <p class="pcard-desc">Unlocking potential with a comprehensive educational platform and
+                                    resource hub</p>
+                                <div class="pcard-metrics" role="list" aria-label="Project results">
+                                    <div class="pmetric" role="listitem">
+                                        <span class="pm-val" aria-label="200 percent increase in enrollment">200%</span>
+                                        <span class="pm-lbl">Enrollment</span>
+                                    </div>
+                                    <div class="pmetric" role="listitem">
+                                        <span class="pm-val" aria-label="50 or more courses listed">50+</span>
+                                        <span class="pm-lbl">Courses</span>
+                                    </div>
+                                </div>
+                                <a href="portfolio.html#project1" class="scard-link mt-3 d-inline-block"
+                                    aria-label="View GreatKey case study">View Case Study →</a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6">
+                        <article class="pcard" aria-labelledby="proj2-title">
+                            <div class="pcard-visual">
+                                <canvas id="pfCanvas2" class="pcard-canvas" role="img"
+                                    aria-label="GripNGo marketing website illustration — sleek dark premium theme"></canvas>
+                                <div class="pcard-overlay" aria-hidden="true">
+                                    <a href="portfolio.html#project2" class="pcard-btn" tabindex="-1"
+                                        aria-hidden="true">View Case Study</a>
+                                </div>
+                            </div>
+                            <div class="pcard-body">
+                                <div class="pcard-tags" aria-label="Project categories">
+                                    <span class="ptag">Marketing</span>
+                                    <span class="ptag">Web Design</span>
+                                </div>
+                                <h3 class="pcard-title" id="proj2-title">GripNGo</h3>
+                                <p class="pcard-desc">Modern, premium marketing website with engaging animations and a
+                                    high-end aesthetic.</p>
+                                <div class="pcard-metrics" role="list" aria-label="Project results">
+                                    <div class="pmetric" role="listitem">
+                                        <span class="pm-val" aria-label="40 percent increase in conversions">40%</span>
+                                        <span class="pm-lbl">Conversions</span>
+                                    </div>
+                                    <div class="pmetric" role="listitem">
+                                        <span class="pm-val">Premium</span>
+                                        <span class="pm-lbl">Design</span>
+                                    </div>
+                                </div>
+                                <a href="portfolio.html#project2" class="scard-link mt-3 d-inline-block"
+                                    aria-label="View GripNGo case study">View Case Study →</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="text-center mt-5">
+                    <a href="portfolio.html" class="btn-brand" aria-label="View our full portfolio of work">View Full
+                        Portfolio</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- -------------------------------------------
+         WHY BRABEL � 3 Pillars
+    ------------------------------------------- -->
+        <section class="pillars-section" aria-labelledby="pillars-heading">
+            <div class="container-xl">
+                <div class="sec-head text-center">
+                    <span class="sec-chip" aria-hidden="true">Why BrAbel</span>
+                    <h2 class="sec-title" id="pillars-heading">We Don't Just Build Websites.</h2>
+                    <p class="sec-sub">We engineer web and software tools that attract customers, build trust, and grow
+                        your
+                        business long-term.</p>
+                </div>
+                <div class="row g-4 mt-2">
+                    <div class="col-md-4">
+                        <div class="pillar-card">
+                            <span class="pillar-num" aria-hidden="true">01</span>
+                            <h3 class="pillar-title">Design That Converts</h3>
+                            <p class="pillar-body">Every design decision is guided by user psychology and proven
+                                conversion principles � not just aesthetics.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="pillar-card pillar-card-mid">
+                            <span class="pillar-num" aria-hidden="true">02</span>
+                            <h3 class="pillar-title">Speed & Performance</h3>
+                            <p class="pillar-body">Fast sites rank higher and convert more. We obsess over Core Web
+                                Vitals, so your site feels lightning-fast from day one.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="pillar-card">
+                            <span class="pillar-num" aria-hidden="true">03</span>
+                            <h3 class="pillar-title">Partnership, Not Projects</h3>
+                            <p class="pillar-body">We stay with you after launch. Regular updates, support, and strategy
+                                � you're never left on your own.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- -------------------------------------------
+         TESTIMONIALS
+    ------------------------------------------- -->
+        <section class="tsti-section" aria-labelledby="testimonials-heading">
+            <div class="container-xl">
+                <div class="sec-head text-center">
+                    <span class="sec-chip" aria-hidden="true">Client Love</span>
+                    <h2 class="sec-title" id="testimonials-heading">What Our Clients Say</h2>
+                    <p class="sec-sub">Don't take our word for it � here's what the people we've worked with have to say
+                    </p>
+                </div>
+
+                <div class="row g-4">
+
+                    <div class="col-md-6 col-lg-4">
+                        <article class="tcard" aria-label="Testimonial from BuildFor You">
+                            <div class="tcard-bar" aria-hidden="true"></div>
+                            <div class="tcard-stars" aria-label="5 out of 5 stars">
+                                <span aria-hidden="true">★★★★★</span>
+                            </div>
+                            <blockquote class="tcard-quote">
+                                "Working with BrAbel was an amazing experience. They mapped our complex requirements
+                                into a stunning website perfectly. Professional, highly creative, and truly committed!"
+                            </blockquote>
+                            <footer class="tcard-author">
+                                <div class="tcard-av" aria-hidden="true">BY</div>
+                                <div>
+                                    <div class="tcard-name">Management</div>
+                                    <div class="tcard-role">BuildFor You</div>
+                                </div>
+                            </footer>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <article class="tcard tcard-featured"
+                            aria-label="Testimonial from Kwame Nkrumah, CEO of Great Key Educational Consult">
+                            <div class="tcard-bar" aria-hidden="true"></div>
+                            <div class="tcard-stars" aria-label="5 out of 5 stars">
+                                <span aria-hidden="true">★★★★★</span>
+                            </div>
+                            <blockquote class="tcard-quote">
+                                "BrAbel delivered exactly what we needed for Great Key Educational Consult. The website
+                                is professional, user-friendly, and has helped us reach more students. Highly
+                                recommended!"
+                            </blockquote>
+                            <footer class="tcard-author">
+                                <div class="tcard-av" aria-hidden="true">KN</div>
+                                <div>
+                                    <div class="tcard-name">Kwame Nkrumah</div>
+                                    <div class="tcard-role">CEO, Great Key Educational Consult</div>
+                                </div>
+                            </footer>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <article class="tcard" aria-label="Testimonial from GripNGo">
+                            <div class="tcard-bar" aria-hidden="true"></div>
+                            <div class="tcard-stars" aria-label="5 out of 5 stars">
+                                <span aria-hidden="true">★★★★★</span>
+                            </div>
+                            <blockquote class="tcard-quote">
+                                "BrAbel transformed our online presence completely. Our new site is sleek, fast, and
+                                has already doubled our inbound enquiries. The team was professional from day one."
+                            </blockquote>
+                            <footer class="tcard-author">
+                                <div class="tcard-av" aria-hidden="true">GG</div>
+                                <div>
+                                    <div class="tcard-name">Management</div>
+                                    <div class="tcard-role">GripNGo</div>
+                                </div>
+                            </footer>
+                        </article>
+                    </div>
+
+                </div>
+
+                <!-- Social proof bar -->
+                <div class="tsti-proof-bar" role="complementary" aria-label="Overall rating summary">
+                    <div class="tsti-proof-item">
+                        <span class="tsti-proof-stars" aria-hidden="true">★★★★★</span>
+                        <span class="tsti-proof-score">5.0</span>
+                        <span class="tsti-proof-label">Average Rating</span>
+                    </div>
+                    <div class="tsti-proof-div" aria-hidden="true"></div>
+                    <div class="tsti-proof-item">
+                        <span class="tsti-proof-num">100%</span>
+                        <span class="tsti-proof-label">Would Recommend</span>
+                    </div>
+                    <div class="tsti-proof-div" aria-hidden="true"></div>
+                    <div class="tsti-proof-item">
+                        <span class="tsti-proof-num">150+</span>
+                        <span class="tsti-proof-label">Enterprise Deploys</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- -------------------------------------------
+         CTA � Canvas Wave Background
+    ------------------------------------------- -->
+        <section class="cta-section" id="cta" aria-labelledby="cta-heading">
+            <canvas id="ctaCanvas" class="cta-canvas" aria-hidden="true"></canvas>
+
+            <div class="container-xl position-relative" style="z-index:2">
+                <div class="cta-box">
+                    <div class="row align-items-center gy-4">
+                        <div class="col-lg-7">
+                            <h2 class="cta-h2" id="cta-heading">Ready to Transform Your Online Presence?</h2>
+                            <p class="cta-p">Let's discuss your project and create a website that drives real business
+                                results. Get a free consultation and quote today.</p>
+                            <div class="cta-btns">
+                                <a href="contact.html" class="btn-brand" aria-label="Get a free quote from BrAbel">
+                                    Get a Free Quote
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                                        <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" />
+                                    </svg>
+                                </a>
+                                <a href="tel:+233209895858" class="btn-ghost"
+                                    aria-label="Call BrAbel now at +233 20 989 5858">
+                                    <svg width="16" height="16" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                                        <path
+                                            d="M18 14v3a2 2 0 01-2.18 2A19.79 19.79 0 013 6.18 2 2 0 015 4h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 12.8a16 16 0 006.11 6.11l2.16-2.16a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0118 18z"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                    </svg>
+                                    Call Us Now
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="cta-chips" role="list" aria-label="BrAbel guarantees">
+                                <div class="cta-chip" role="listitem">
+                                    <span class="cta-chip-ic" aria-hidden="true">✓</span> Fast Delivery
+                                </div>
+                                <div class="cta-chip" role="listitem">
+                                    <span class="cta-chip-ic" aria-hidden="true">★</span> Premium Quality
+                                </div>
+                                <div class="cta-chip" role="listitem">
+                                    <span class="cta-chip-ic" aria-hidden="true">♥</span> Client Focused
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- ═══════════════════════════════════════════
-         FOOTER
-    ═══════════════════════════════════════════ -->
-    <footer class="bfooter">
-        <div class="bfooter-topline"></div>
+    </main><!-- /main -->
+
+    <!-- -------------------------------------------
+         FOOTER � 4-Column Mega Footer
+    ------------------------------------------- -->
+    <footer class="bfooter" aria-label="Site footer">
+        <div class="bfooter-topline" aria-hidden="true"></div>
         <div class="container-xl">
             <div class="row gy-5">
 
+                <!-- Col 1: Brand + social -->
                 <div class="col-lg-4">
-                    <a href="index.html" class="bfooter-logo">
-                        <span class="lp">Br</span><span class="lc">Abel</span>
+                    <a href="index.html" class="bfooter-logo" aria-label="BrAbel � back to home">
+                        <span class="lp" aria-hidden="true">Br</span><span class="lc">Abel</span>
                     </a>
-                    <p class="bfooter-desc">Creating stunning, high-converting websites for startups and growing
+                    <p class="bfooter-desc">Creating stunning, high-converting websites and scalable software for
+                        startups and growing
                         businesses since 2024.</p>
-                    <div class="bfooter-socials">
-                        <a href="mailto:hello@brabel.solutions" class="fsoc" aria-label="Email">
+                    <div class="bfooter-socials" role="list" aria-label="Contact and social links">
+                        <a href="mailto:hello@brabel.solutions" class="fsoc"
+                            aria-label="Email BrAbel at hello@brabel.solutions" role="listitem">
                             <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                                 <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
                                 <polyline points="22,6 12,13 2,6" />
                             </svg>
                         </a>
-                        <a href="tel:+233509563068" class="fsoc" aria-label="Phone">
+                        <a href="tel:+233209895858" class="fsoc" aria-label="Call BrAbel at +233 20 989 5858"
+                            role="listitem">
                             <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                                 <path
                                     d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.66A2 2 0 012 0h3a2 2 0 012 1.72 17.18 17.18 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 17.18 17.18 0 002.81.7A2 2 0 0122 14.92z" />
                             </svg>
                         </a>
-                        <a href="https://wa.me/233509563068" class="fsoc" aria-label="WhatsApp" target="_blank"
-                            rel="noopener">
-                            <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
+                        <a href="https://wa.me/233209895858" class="fsoc" aria-label="Message BrAbel on WhatsApp"
+                            target="_blank" rel="noopener noreferrer" role="listitem">
+                            <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                                 <path
                                     d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
                             </svg>
@@ -454,41 +737,77 @@
                     </div>
                 </div>
 
+                <!-- Col 2: Company sitemap -->
                 <div class="col-6 col-lg-2 offset-lg-1">
-                    <h5 class="bfooter-h">Company</h5>
-                    <ul class="bfooter-list">
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="process.html">Our Process</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                    <h2 class="bfooter-h">Company</h2>
+                    <ul class="bfooter-list" role="list">
+                        <li role="listitem"><a href="about.html">About Us</a></li>
+                        <li role="listitem"><a href="portfolio.html">Portfolio</a></li>
+                        <li role="listitem"><a href="process.html">Our Process</a></li>
+                        <li role="listitem"><a href="pricing.html">Pricing</a></li>
+                        <li role="listitem"><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
 
+                <!-- Col 3: Services -->
                 <div class="col-6 col-lg-2">
-                    <h5 class="bfooter-h">Services</h5>
-                    <ul class="bfooter-list">
-                        <li><a href="services.html#web-design">Web Design</a></li>
-                        <li><a href="services.html#web-development">Web Dev</a></li>
-                        <li><a href="services.html#ecommerce">E-commerce</a></li>
-                        <li><a href="services.html#redesign">Redesign</a></li>
-                        <li><a href="services.html#maintenance">Maintenance</a></li>
+                    <h2 class="bfooter-h">Services</h2>
+                    <ul class="bfooter-list" role="list">
+                        <li role="listitem"><a href="services.html#web-design">Web Design</a></li>
+                        <li role="listitem"><a href="services.html#web-development">Web Dev</a></li>
+                        <li role="listitem"><a href="services.html#custom-software">Custom Software</a></li>
+                        <li role="listitem"><a href="services.html#ecommerce">E-commerce</a></li>
+                        <li role="listitem"><a href="services.html#seo">SEO</a></li>
+                        <li role="listitem"><a href="services.html#maintenance">Maintenance</a></li>
                     </ul>
                 </div>
 
+                <!-- Col 4: Newsletter -->
                 <div class="col-lg-3">
-                    <h5 class="bfooter-h">Get In Touch</h5>
-                    <ul class="bfooter-contact">
+                    <h2 class="bfooter-h">Stay Updated</h2>
+                    <p class="bfooter-nl-desc">Get web design tips, case studies, and updates straight to your inbox.
+                    </p>
+                    <form class="bfooter-nl-form" id="newsletterForm" action="https://formsubmit.co/hello@brabel.solutions" method="POST" novalidate aria-label="Newsletter signup form">
+                        <input type="hidden" name="_subject" value="New Newsletter Signup — BrAbel">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="https://brabel.solutions/index.html?subscribed=1">
+                        <div class="bfooter-nl-row">
+                            <label for="nlEmail" class="visually-hidden">Email address</label>
+                            <input type="email" id="nlEmail" name="email" class="bfooter-nl-input"
+                                placeholder="your@email.com" required aria-required="true"
+                                aria-label="Enter your email address to subscribe" autocomplete="email">
+                            <button type="submit" class="bfooter-nl-btn" aria-label="Subscribe to BrAbel newsletter">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                                    <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" />
+                                </svg>
+                                <span class="visually-hidden">Subscribe</span>
+                            </button>
+                        </div>
+                        <p class="bfooter-nl-msg" id="nlMsg" role="status" aria-live="polite"></p>
+                        <p class="bfooter-nl-privacy">
+                            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" aria-hidden="true">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                            </svg>
+                            No spam. Unsubscribe any time.
+                        </p>
+                    </form>
+
+                    <!-- Contact info -->
+                    <ul class="bfooter-contact mt-3" aria-label="Contact information">
                         <li>
-                            <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+                            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                                 <path
                                     d="M14 11.2v2.4a1.6 1.6 0 01-1.744 1.6A15.832 15.832 0 012.544 4.944 1.6 1.6 0 014.144 3.2h2.4a1.6 1.6 0 011.6 1.376c.102.768.289 1.522.56 2.248a1.6 1.6 0 01-.36 1.688L6.872 10.24a12.8 12.8 0 004.888 4.888l1.728-1.472a1.6 1.6 0 011.688-.36c.726.271 1.48.458 2.248.56A1.6 1.6 0 0114 14.4z"
                                     stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
                                     stroke-linejoin="round" />
                             </svg>
-                            +233 50 956 3068
+                            <a href="tel:+233209895858">+233 20 989 5858</a>
                         </li>
                         <li>
-                            <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+                            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                                 <path
                                     d="M2.667 2.667h10.666c.734 0 1.334.6 1.334 1.333v8c0 .733-.6 1.333-1.334 1.333H2.667c-.734 0-1.334-.6-1.334-1.333V4c0-.733.6-1.333 1.334-1.333z"
                                     stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
@@ -496,10 +815,10 @@
                                 <path d="M14.667 4L8 8.667 1.333 4" stroke="currentColor" stroke-width="1.5"
                                     stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
-                            hello@brabel.solutions
+                            <a href="mailto:hello@brabel.solutions">hello@brabel.solutions</a>
                         </li>
                         <li>
-                            <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+                            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                                 <path d="M14 6.667c0 4.666-6 8.666-6 8.666s-6-4-6-8.666a6 6 0 0112 0z"
                                     stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
                                     stroke-linejoin="round" />
@@ -510,10 +829,10 @@
                     </ul>
                 </div>
 
-            </div>
+            </div><!-- /row -->
 
             <div class="bfooter-bottom">
-                <p class="mb-0">&copy; 2026 BrAbel. All rights reserved.</p>
+                <p class="mb-0">&copy; <span id="footerYear">2026</span> BrAbel. All rights reserved.</p>
                 <div class="bfooter-legal">
                     <a href="privacy.html">Privacy Policy</a>
                     <a href="terms.html">Terms of Service</a>
@@ -526,6 +845,34 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/home.js"></script>
+    <script>
+        /* -- Lucide icons -- */
+        lucide.createIcons();
+
+        /* -- Footer year -- */
+        document.getElementById('footerYear').textContent = new Date().getFullYear();
+
+        /* -- Newsletter form -- */
+        (function newsletter() {
+            const form = document.getElementById('newsletterForm');
+            const msg = document.getElementById('nlMsg');
+            if (!form) return;
+
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const email = form.querySelector('#nlEmail').value.trim();
+                if (!email || !/\S+@\S+\.\S+/.test(email)) {
+                    msg.textContent = 'Please enter a valid email address.';
+                    msg.style.color = 'hsl(0,80%,65%)';
+                    return;
+                }
+                msg.textContent = '🎉 You\'re subscribed! Thank you.';
+                msg.style.color = 'hsl(145,60%,55%)';
+                form.reset();
+            });
+        })();
+    </script>
+    <script src="assets/js/livechat.js"></script>
 </body>
 
 </html>

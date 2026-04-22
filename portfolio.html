@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -54,6 +54,7 @@
                 <li><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
                 <li><a href="process.html" class="nav-link">Process</a></li>
                 <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
                 <li><a href="contact.html" class="nav-link nav-cta">Get a Quote</a></li>
             </ul>
 
@@ -65,7 +66,7 @@
         </div>
     </nav>
 
-    <!-- Page Header — Bokeh Canvas -->
+    <!-- Page Header � Bokeh Canvas -->
     <section class="subpage-hero-wrap" id="portfolioHero">
         <canvas id="portfolioHeroCanvas" class="subpage-hero-canvas"></canvas>
         <div class="container subpage-hero-content">
@@ -84,13 +85,14 @@
                 <button class="filter-btn" data-filter="ecommerce">E-commerce</button>
                 <button class="filter-btn" data-filter="saas">SaaS</button>
                 <button class="filter-btn" data-filter="corporate">Corporate</button>
-                <button class="filter-btn" data-filter="redesign">Redesign</button>
+                <button class="filter-btn" data-filter="software">Custom Software</button>
             </div>
 
             <!-- Portfolio Grid -->
             <div class="portfolio-grid">
                 <div class="portfolio-card portfolio-item" data-category="corporate">
-                    <div class="portfolio-image" id="portfolio1">
+                    <div class="portfolio-image" id="portfolio1" style="padding:0;overflow:hidden;">
+                        <img src="assets/images/mockup_greatkey.png" alt="GreatKey Educational Consult website screenshot" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;">
                         <div class="portfolio-overlay">
                             <a href="#project1" class="portfolio-view">View Case Study</a>
                         </div>
@@ -116,26 +118,81 @@
                     </div>
                 </div>
 
-                <div class="portfolio-card portfolio-item" data-category="ecommerce">
-                    <div class="portfolio-image" id="portfolio2">
+                <div class="portfolio-card portfolio-item" data-category="corporate">
+                    <div class="portfolio-image" id="portfolio2" style="padding:0;overflow:hidden;">
+                        <img src="assets/images/mockup_gripngo.png" alt="GripNGo website screenshot" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;">
                         <div class="portfolio-overlay">
                             <a href="#project2" class="portfolio-view">View Case Study</a>
                         </div>
                     </div>
                     <div class="portfolio-content">
                         <div class="portfolio-tags">
-                            <span class="tag">E-commerce</span>
-                            <span class="tag">Fashion</span>
+                            <span class="tag">Marketing</span>
+                            <span class="tag">Web Design</span>
                         </div>
-                        <h3 class="portfolio-title">BGBrand (House of BG)</h3>
-                        <p class="portfolio-text">Premium fashion brand showcasing unique style and global elegance</p>
+                        <h3 class="portfolio-title">GripNGo</h3>
+                        <p class="portfolio-text">Modern, premium marketing website with engaging animations and a
+                            high-end aesthetic.</p>
+                        <div class="portfolio-metrics">
+                            <div class="metric">
+                                <span class="metric-value">40%</span>
+                                <span class="metric-label">Conversions</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">Premium</span>
+                                <span class="metric-label">Design</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card portfolio-item" data-category="saas">
+                    <div class="portfolio-image" id="portfolio3" style="padding:0;overflow:hidden;">
+                        <img src="assets/images/mockup_buildforyou.png" alt="BuildForYou website screenshot" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;">
+                        <div class="portfolio-overlay">
+                            <a href="#project3" class="portfolio-view">View Case Study</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-tags">
+                            <span class="tag">Construction</span>
+                            <span class="tag">Web Design</span>
+                        </div>
+                        <h3 class="portfolio-title">BuildForYou</h3>
+                        <p class="portfolio-text">A clean, conversion-focused website for a growing construction and home improvement brand.</p>
                         <div class="portfolio-metrics">
                             <div class="metric">
                                 <span class="metric-value">3x</span>
-                                <span class="metric-label">Engagement</span>
+                                <span class="metric-label">Lead Volume</span>
                             </div>
                             <div class="metric">
-                                <span class="metric-value">Global</span>
+                                <span class="metric-value">Premium</span>
+                                <span class="metric-label">Branding</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card portfolio-item" data-category="corporate">
+                    <div class="portfolio-image" id="portfolio4">
+                        <div class="portfolio-overlay">
+                            <a href="#project4" class="portfolio-view">View Case Study</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-tags">
+                            <span class="tag">Engineering</span>
+                            <span class="tag">Corporate</span>
+                        </div>
+                        <h3 class="portfolio-title">TEIN-KsTU</h3>
+                        <p class="portfolio-text">Digital presence for the Technology &amp; Engineering Innovation Network at KNUST.</p>
+                        <div class="portfolio-metrics">
+                            <div class="metric">
+                                <span class="metric-value">500+</span>
+                                <span class="metric-label">Members</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">National</span>
                                 <span class="metric-label">Reach</span>
                             </div>
                         </div>
@@ -218,45 +275,44 @@
         </div>
     </section>
 
-    <!-- Case Study: BGBrand -->
+    <!-- Case Study: GripNGo -->
     <section class="section section-dark" id="project2">
         <div class="container">
             <div class="section-header">
-                <span class="section-badge">E-commerce Fashion</span>
-                <h2 class="section-title">BGBrand (House of BG)</h2>
+                <span class="section-badge">Corporate / Marketing</span>
+                <h2 class="section-title">GripNGo</h2>
                 <p class="section-description">
-                    Creating an immersive, editorial digital showroom for a premium fashion house.
+                    Creating a modern, premium marketing website to capture leads and drive conversions.
                 </p>
             </div>
 
             <div class="case-study-section">
                 <h3>The Challenge</h3>
                 <p class="service-detail-description">
-                    House of BG needed a digital presence that matched the elegance and exclusivity of their physical
-                    garments. Their previous platform failed to showcase the intricate details of their designs and
-                    lacked
-                    the storytelling element essential for a luxury brand.
+                    GripNGo needed a high-end marketing presence to outshine competitors. Their previous digital
+                    approach was outdated and lacked the interactivity required to engage modern users. They needed a
+                    clean, playful, yet premium aesthetic to effectively showcase their value proposition.
                 </p>
                 <ul class="benefits-list">
-                    <li>Lack of high-quality visual representation</li>
-                    <li>Disconnected brand storytelling</li>
-                    <li>Navigation that didn't support browsing collections</li>
-                    <li>Limited mobile engagement</li>
+                    <li>Low conversion rates on legacy landing pages</li>
+                    <li>Outdated, non-premium aesthetic</li>
+                    <li>Lack of user engagement and interactivity</li>
+                    <li>Poor mobile experience</li>
                 </ul>
             </div>
 
             <div class="case-study-section">
                 <h3>Our Solution</h3>
                 <p class="service-detail-description">
-                    We designed a "Digital Showroom" experience. The site focuses on high-resolution imagery and
-                    minimalist design to let the clothes speak for themselves. We implemented smooth transitions and a
-                    curated "Lookbook" feature to guide users through the latest collections.
+                    We designed a completely new marketing website utilizing a sleek dark-mode aesthetic with vibrant
+                    accents. We implemented smooth scrolling, micro-animations, and dynamic case studies that guide the
+                    user journey naturally toward conversion.
                 </p>
                 <ul class="benefits-list">
-                    <li>High-fidelity image galleries with zoom</li>
-                    <li>Editorial-style layout for collections</li>
-                    <li>Seamless mobile browsing experience</li>
-                    <li>Integrated social media feeds for live updates</li>
+                    <li>Premium custom UI with glassmorphism</li>
+                    <li>Engaging micro-animations and scroll reveals</li>
+                    <li>Optimized user flow for lead generation</li>
+                    <li>Fully responsive design with accessibility features</li>
                 </ul>
             </div>
 
@@ -264,26 +320,26 @@
                 <h3>The Results</h3>
                 <div class="portfolio-metrics" style="justify-content: space-around; padding: var(--spacing-2xl) 0;">
                     <div class="metric">
-                        <span class="metric-value">3x</span>
-                        <span class="metric-label">Online Engagement</span>
+                        <span class="metric-value">40%</span>
+                        <span class="metric-label">Conversion Increase</span>
                     </div>
                     <div class="metric">
-                        <span class="metric-value">Global</span>
-                        <span class="metric-label">Audience Reach</span>
+                        <span class="metric-value">5x</span>
+                        <span class="metric-label">More Leads</span>
                     </div>
                     <div class="metric">
-                        <span class="metric-value">500+</span>
-                        <span class="metric-label">Looks Showcased</span>
+                        <span class="metric-value">1.5s</span>
+                        <span class="metric-label">Load Time</span>
                     </div>
                     <div class="metric">
-                        <span class="metric-value">4.9/5</span>
-                        <span class="metric-label">Brand Perception</span>
+                        <span class="metric-value">100/100</span>
+                        <span class="metric-label">Performance Score</span>
                     </div>
                 </div>
                 <p class="service-detail-description">
-                    BGBrand's new website has become a central hub for fashion enthusiasts. The immersive design has
-                    significantly increased time-on-site and established House of BG as a forward-thinking player in the
-                    digital fashion space.
+                    GripNGo's new digital presence instantly positioned them as a premium offering in their market. The
+                    improved user experience and performance optimizations resulted in a dramatic increase in qualified
+                    leads within the first month of launch.
                 </p>
             </div>
         </div>
@@ -314,15 +370,15 @@
                 </div>
                 <div class="cta-visual">
                     <div class="cta-float-card card-1">
-                        <div class="float-icon">✓</div>
+                        <div class="float-icon">&#x1F3C6;</div>
                         <div class="float-text">Proven Results</div>
                     </div>
                     <div class="cta-float-card card-2">
-                        <div class="float-icon">★</div>
+                        <div class="float-icon">&#x1F680;</div>
                         <div class="float-text">200+ Projects</div>
                     </div>
                     <div class="cta-float-card card-3">
-                        <div class="float-icon">♥</div>
+                        <div class="float-icon">&#x2764;</div>
                         <div class="float-text">Happy Clients</div>
                     </div>
                 </div>
@@ -339,7 +395,7 @@
                         <span class="logo-pixel">Br</span><span class="logo-craft">Abel</span>
                     </a>
                     <p class="footer-description">
-                        Creating stunning, high-converting websites for startups and growing businesses since 2024.
+                        Creating stunning, high-converting websites and custom software for startups and growing businesses since 2024.
                     </p>
                     <div class="social-links">
                         <a href="mailto:hello@brabel.solutions" aria-label="Email" class="social-link">
@@ -349,48 +405,48 @@
                                 <polyline points="22,6 12,13 2,6" />
                             </svg>
                         </a>
-                        <a href="tel:+233509563068" aria-label="Phone" class="social-link">
+                        <a href="tel:+233209895858" aria-label="Phone" class="social-link">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path
                                     d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.66A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z" />
                             </svg>
                         </a>
-                        <a href="https://wa.me/233509563068" aria-label="WhatsApp" class="social-link" target="_blank"
+                        <a href="https://wa.me/233209895858" aria-label="WhatsApp" class="social-link" target="_blank"
                             rel="noopener">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                                 <path
                                     d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
                             </svg>
                         </a>
+                        <a href="#" aria-label="Facebook" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                <path
+                                    d="M20 10c0-5.523-4.477-10-10-10S0 4.477 0 10c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V10h2.54V7.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V10h2.773l-.443 2.89h-2.33v6.988C16.343 19.128 20 14.991 20 10z" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Twitter" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                <path
+                                    d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="LinkedIn" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                <path
+                                    d="M18.335 0H1.665C.747 0 0 .746 0 1.665v16.67C0 19.253.746 20 1.665 20h16.67C19.254 20 20 19.254 20 18.335V1.665C20 .747 19.254 0 18.335 0zM6.003 17.001H3.002V7.5h3.001v9.501zM4.502 6.251a1.75 1.75 0 110-3.5 1.75 1.75 0 010 3.5zM17.005 17.001h-3.001v-4.875c0-1.162-.023-2.658-1.62-2.658-1.621 0-1.869 1.266-1.869 2.575v4.958H7.514V7.5h2.877v1.296h.041c.4-.759 1.379-1.56 2.838-1.56 3.035 0 3.595 1.998 3.595 4.595v5.17h-.86z" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                <path
+                                    d="M10 0C7.284 0 6.944.012 5.877.06 4.813.11 4.086.278 3.45.525a4.947 4.947 0 00-1.788 1.163A4.947 4.947 0 00.525 3.45C.278 4.086.109 4.813.06 5.877.012 6.944 0 7.284 0 10s.012 3.056.06 4.123c.05 1.064.218 1.791.465 2.427a4.947 4.947 0 001.163 1.788 4.947 4.947 0 001.788 1.163c.636.247 1.363.415 2.427.465 1.067.048 1.407.06 4.123.06s3.056-.012 4.123-.06c1.064-.05 1.791-.218 2.427-.465a4.947 4.947 0 001.788-1.163 4.947 4.947 0 001.163-1.788c.247-.636.415-1.363.465-2.427.048-1.067.06-1.407.06-4.123s-.012-3.056-.06-4.123c-.05-1.064-.218-1.791-.465-2.427a4.947 4.947 0 00-1.163-1.788A4.947 4.947 0 0016.55.525C15.914.278 15.187.109 14.123.06 13.056.012 12.716 0 10 0zm0 1.802c2.67 0 2.986.01 4.04.058.976.045 1.505.207 1.858.344.467.182.8.398 1.15.748.35.35.566.683.748 1.15.137.353.3.882.344 1.858.048 1.054.058 1.37.058 4.04s-.01 2.986-.058 4.04c-.045.976-.207 1.505-.344 1.858-.182.467-.398.8-.748 1.15-.35.35-.683.566-1.15.748-.353.137-.882.3-1.858.344-1.054.048-1.37.058-4.04.058s-2.986-.01-4.04-.058c-.976-.045-1.505-.207-1.858-.344a3.097 3.097 0 01-1.15-.748 3.097 3.097 0 01-.748-1.15c-.137-.353-.3-.882-.344-1.858-.048-1.054-.058-1.37-.058-4.04s.01-2.986.058-4.04c.045-.976.207-1.505.344-1.858.182-.467.398-.8.748-1.15.35-.35.683-.566 1.15-.748.353-.137.882-.3 1.858-.344 1.054-.048 1.37-.058 4.04-.058z" />
+                                <path
+                                    d="M10 13.333a3.333 3.333 0 110-6.666 3.333 3.333 0 010 6.666zm0-8.468a5.135 5.135 0 100 10.27 5.135 5.135 0 000-10.27zm6.538-.203a1.2 1.2 0 11-2.4 0 1.2 1.2 0 012.4 0z" />
+                            </svg>
+                        </a>
                     </div>
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
-                        <path
-                            d="M20 10c0-5.523-4.477-10-10-10S0 4.477 0 10c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V10h2.54V7.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V10h2.773l-.443 2.89h-2.33v6.988C16.343 19.128 20 14.991 20 10z" />
-                    </svg>
-                    </a>
-                    <a href="#" aria-label="Twitter" class="social-link">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
-                            <path
-                                d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84" />
-                        </svg>
-                    </a>
-                    <a href="#" aria-label="LinkedIn" class="social-link">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
-                            <path
-                                d="M18.335 0H1.665C.747 0 0 .746 0 1.665v16.67C0 19.253.746 20 1.665 20h16.67C19.254 20 20 19.254 20 18.335V1.665C20 .747 19.254 0 18.335 0zM6.003 17.001H3.002V7.5h3.001v9.501zM4.502 6.251a1.75 1.75 0 110-3.5 1.75 1.75 0 010 3.5zM17.005 17.001h-3.001v-4.875c0-1.162-.023-2.658-1.62-2.658-1.621 0-1.869 1.266-1.869 2.575v4.958H7.514V7.5h2.877v1.296h.041c.4-.759 1.379-1.56 2.838-1.56 3.035 0 3.595 1.998 3.595 4.595v5.17h-.86z" />
-                        </svg>
-                    </a>
-                    <a href="#" aria-label="Instagram" class="social-link">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
-                            <path
-                                d="M10 0C7.284 0 6.944.012 5.877.06 4.813.11 4.086.278 3.45.525a4.947 4.947 0 00-1.788 1.163A4.947 4.947 0 00.525 3.45C.278 4.086.109 4.813.06 5.877.012 6.944 0 7.284 0 10s.012 3.056.06 4.123c.05 1.064.218 1.791.465 2.427a4.947 4.947 0 001.163 1.788 4.947 4.947 0 001.788 1.163c.636.247 1.363.415 2.427.465 1.067.048 1.407.06 4.123.06s3.056-.012 4.123-.06c1.064-.05 1.791-.218 2.427-.465a4.947 4.947 0 001.788-1.163 4.947 4.947 0 001.163-1.788c.247-.636.415-1.363.465-2.427.048-1.067.06-1.407.06-4.123s-.012-3.056-.06-4.123c-.05-1.064-.218-1.791-.465-2.427a4.947 4.947 0 00-1.163-1.788A4.947 4.947 0 0016.55.525C15.914.278 15.187.109 14.123.06 13.056.012 12.716 0 10 0zm0 1.802c2.67 0 2.986.01 4.04.058.976.045 1.505.207 1.858.344.467.182.8.398 1.15.748.35.35.566.683.748 1.15.137.353.3.882.344 1.858.048 1.054.058 1.37.058 4.04s-.01 2.986-.058 4.04c-.045.976-.207 1.505-.344 1.858-.182.467-.398.8-.748 1.15-.35.35-.683.566-1.15.748-.353.137-.882.3-1.858.344-1.054.048-1.37.058-4.04.058s-2.986-.01-4.04-.058c-.976-.045-1.505-.207-1.858-.344a3.097 3.097 0 01-1.15-.748 3.097 3.097 0 01-.748-1.15c-.137-.353-.3-.882-.344-1.858-.048-1.054-.058-1.37-.058-4.04s.01-2.986.058-4.04c.045-.976.207-1.505.344-1.858.182-.467.398-.8.748-1.15.35-.35.683-.566 1.15-.748.353-.137.882-.3 1.858-.344 1.054-.048 1.37-.058 4.04-.058z" />
-                            <path
-                                d="M10 13.333a3.333 3.333 0 110-6.666 3.333 3.333 0 010 6.666zm0-8.468a5.135 5.135 0 100 10.27 5.135 5.135 0 000-10.27zm6.538-.203a1.2 1.2 0 11-2.4 0 1.2 1.2 0 012.4 0z" />
-                        </svg>
-                    </a>
                 </div>
-            </div>
 
             <div class="footer-col">
                 <h4 class="footer-heading">Company</h4>
@@ -408,7 +464,7 @@
                     <li><a href="services.html#web-design">Web Design</a></li>
                     <li><a href="services.html#web-development">Web Development</a></li>
                     <li><a href="services.html#ecommerce">E-commerce</a></li>
-                    <li><a href="services.html#redesign">Website Redesign</a></li>
+                    <li><a href="services.html#custom-software">Custom Software</a></li>
                     <li><a href="services.html#maintenance">Maintenance</a></li>
                 </ul>
             </div>
@@ -423,7 +479,7 @@
                                 stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
                                 stroke-linejoin="round" />
                         </svg>
-                        +233 50 956 3068
+                        +233 20 989 5858
                     </li>
                     <li>
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -461,6 +517,7 @@
 
     <script src="assets/js/script.js"></script>
     <script src="assets/js/page-hero-canvas.js"></script>
+    <script src="assets/js/livechat.js"></script>
 </body>
 
 </html>

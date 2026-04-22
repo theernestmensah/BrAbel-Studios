@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found — BrAbel</title>
+    <meta name="description" content="Oops! The page you're looking for doesn't exist. Let's get you back on track.">
+    <meta name="robots" content="noindex, nofollow">
+
+    <link rel="icon" type="image/jpeg" href="assets/images/logo.jpeg">
+    <link rel="apple-touch-icon" href="assets/images/logo.jpeg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        :root {
+            --orange: hsl(20, 90%, 52%);
+            --orange-glow: hsla(20, 90%, 52%, 0.35);
+            --bg: hsl(222, 28%, 7%);
+            --surface: hsl(222, 24%, 11%);
+            --border: hsla(220, 30%, 100%, 0.08);
+            --text: hsl(220, 20%, 92%);
+            --text-muted: hsl(220, 15%, 55%);
+        }
+
+        html, body {
+            height: 100%;
+            background: var(--bg);
+            color: var(--text);
+            font-family: 'Inter', sans-serif;
+            overflow: hidden;
+        }
+
+        canvas#errCanvas {
+            position: fixed;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
+
+        .err-wrap {
+            position: relative;
+            z-index: 1;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .err-code {
+            font-family: 'Outfit', sans-serif;
+            font-size: clamp(6rem, 20vw, 12rem);
+            font-weight: 900;
+            line-height: 1;
+            background: linear-gradient(135deg, hsl(20,90%,60%), hsl(32,95%,55%), hsl(20,90%,40%));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: -0.04em;
+            animation: errPulse 3s ease-in-out infinite;
+        }
+
+        @keyframes errPulse {
+            0%, 100% { filter: drop-shadow(0 0 20px var(--orange-glow)); }
+            50% { filter: drop-shadow(0 0 50px var(--orange-glow)); }
+        }
+
+        .err-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: clamp(1.4rem, 4vw, 2rem);
+            font-weight: 700;
+            margin: 0.5rem 0 0.75rem;
+            color: var(--text);
+        }
+
+        .err-desc {
+            font-size: 1rem;
+            color: var(--text-muted);
+            max-width: 440px;
+            line-height: 1.7;
+            margin-bottom: 2rem;
+        }
+
+        .err-btns {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .err-btn-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: .5rem;
+            padding: .75rem 1.75rem;
+            border-radius: 2rem;
+            background: linear-gradient(135deg, hsl(20,90%,52%), hsl(32,95%,50%));
+            color: #fff;
+            font-weight: 700;
+            font-size: .95rem;
+            text-decoration: none;
+            box-shadow: 0 4px 20px var(--orange-glow);
+            transition: transform .25s ease, box-shadow .25s ease;
+        }
+        .err-btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 28px hsla(20,90%,52%,.55);
+        }
+
+        .err-btn-ghost {
+            display: inline-flex;
+            align-items: center;
+            gap: .5rem;
+            padding: .75rem 1.75rem;
+            border-radius: 2rem;
+            border: 1px solid var(--border);
+            color: var(--text-muted);
+            font-weight: 600;
+            font-size: .95rem;
+            text-decoration: none;
+            background: var(--surface);
+            transition: border-color .25s, color .25s;
+        }
+        .err-btn-ghost:hover {
+            border-color: var(--orange);
+            color: var(--text);
+        }
+
+        .err-links {
+            margin-top: 2.5rem;
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .err-links a {
+            color: var(--text-muted);
+            font-size: .875rem;
+            text-decoration: none;
+            transition: color .2s;
+        }
+        .err-links a:hover { color: hsl(20,90%,60%); }
+
+        /* Logo */
+        .err-logo {
+            position: fixed;
+            top: 1.5rem;
+            left: 2rem;
+            z-index: 10;
+            text-decoration: none;
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.4rem;
+            font-weight: 800;
+        }
+        .err-logo .lp { color: var(--text-muted); }
+        .err-logo .lc { color: var(--orange); }
+    </style>
+</head>
+
+<body>
+    <canvas id="errCanvas"></canvas>
+
+    <a href="index.html" class="err-logo" aria-label="BrAbel — back to home">
+        <span class="lp">Br</span><span class="lc">Abel</span>
+    </a>
+
+    <div class="err-wrap">
+        <div class="err-code" aria-label="Error 404">404</div>
+        <h1 class="err-title">Page not found</h1>
+        <p class="err-desc">
+            Looks like this page went on a digital adventure without us.
+            Let's get you back on track.
+        </p>
+        <div class="err-btns">
+            <a href="index.html" class="err-btn-primary">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <polyline points="9 22 9 12 15 12 15 22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                Back to Home
+            </a>
+            <a href="contact.html" class="err-btn-ghost">Contact Us</a>
+        </div>
+        <nav class="err-links" aria-label="Quick links">
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="about.html">About</a>
+        </nav>
+    </div>
+
+    <script>
+    (function () {
+        const canvas = document.getElementById('errCanvas');
+        const ctx = canvas.getContext('2d');
+        let W, H, particles = [], t = 0;
+
+        function resize() {
+            W = canvas.width = window.innerWidth;
+            H = canvas.height = window.innerHeight;
+        }
+        resize();
+        window.addEventListener('resize', resize);
+
+        for (let i = 0; i < 55; i++) {
+            particles.push({
+                x: Math.random(), y: Math.random(),
+                r: .002 + Math.random() * .004,
+                vx: (Math.random() - .5) * .00015,
+                vy: (Math.random() - .5) * .00015,
+                hue: Math.random() > .6 ? 20 + Math.random() * 15 : 220 + Math.random() * 30,
+                alpha: .15 + Math.random() * .25
+            });
+        }
+
+        function draw() {
+            t++;
+            ctx.clearRect(0, 0, W, H);
+
+            // Ambient orbs
+            [[.25, .35, .55, 20], [.75, .65, .5, 30], [.5, .2, .4, 240]].forEach(([px, py, pr, hue]) => {
+                const grd = ctx.createRadialGradient(px*W, py*H, 0, px*W, py*H, pr*Math.min(W,H));
+                grd.addColorStop(0, `hsla(${hue},80%,50%,0.08)`);
+                grd.addColorStop(1, 'transparent');
+                ctx.fillStyle = grd;
+                ctx.fillRect(0, 0, W, H);
+            });
+
+            // Floating particles
+            particles.forEach(p => {
+                p.x += p.vx; p.y += p.vy;
+                if (p.x < 0) p.x = 1; if (p.x > 1) p.x = 0;
+                if (p.y < 0) p.y = 1; if (p.y > 1) p.y = 0;
+                const pulse = .5 + .5 * Math.sin(t * .02 + p.hue);
+                ctx.beginPath();
+                ctx.arc(p.x * W, p.y * H, p.r * Math.min(W, H), 0, Math.PI * 2);
+                ctx.fillStyle = `hsla(${p.hue},80%,60%,${p.alpha * pulse})`;
+                ctx.fill();
+            });
+
+            requestAnimationFrame(draw);
+        }
+        draw();
+    })();
+    </script>
+</body>
+</html>

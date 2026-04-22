@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Web design tips, case studies, and digital insights from the BrAbel team. Helping Ghanaian businesses grow online.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://brabel.solutions/blog.html">
+    <meta property="og:title" content="Insights & Blog — BrAbel">
+    <meta property="og:description" content="Web design tips, case studies, and digital insights from the BrAbel team.">
+    <meta property="og:image" content="https://brabel.solutions/assets/images/logo.jpeg">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>Insights & Blog — BrAbel</title>
+    <link rel="canonical" href="https://brabel.solutions/blog.html">
+    <link rel="icon" type="image/jpeg" href="assets/images/logo.jpeg">
+    <link rel="apple-touch-icon" href="assets/images/logo.jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-pixel">Br</span><span class="logo-craft">Abel</span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                <li><a href="process.html" class="nav-link">Process</a></li>
+                <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+                <li><a href="contact.html" class="nav-link nav-cta">Get a Quote</a></li>
+            </ul>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="subpage-hero-wrap" id="blogHero">
+        <canvas id="blogHeroCanvas" class="subpage-hero-canvas"></canvas>
+        <div class="container subpage-hero-content">
+            <span class="section-badge" style="margin-bottom:1rem;display:inline-block;">Insights</span>
+            <h1 class="page-title">Ideas That <span class="hero-accent">Drive Growth</span></h1>
+            <p class="page-description">Web design tips, case studies, and digital strategy insights — straight from the BrAbel team.</p>
+        </div>
+    </section>
+
+    <!-- Blog Grid -->
+    <section class="section">
+        <div class="container">
+
+            <!-- Featured Article -->
+            <article class="blog-featured" style="background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-xl);overflow:hidden;display:grid;grid-template-columns:1fr 1fr;gap:0;margin-bottom:3rem;" aria-labelledby="blog-feat-title">
+                <div class="blog-feat-img" style="background:linear-gradient(135deg,hsl(20,90%,15%),hsl(222,30%,10%));min-height:300px;display:flex;align-items:center;justify-content:center;padding:2rem;">
+                    <div style="text-align:center;">
+                        <div style="font-size:4rem;margin-bottom:1rem;">🌍</div>
+                        <div style="font-size:.85rem;color:hsl(20,90%,60%);font-weight:600;letter-spacing:.08em;text-transform:uppercase;">Case Study</div>
+                    </div>
+                </div>
+                <div style="padding:2.5rem;">
+                    <div style="display:flex;gap:.5rem;margin-bottom:1rem;flex-wrap:wrap;">
+                        <span style="background:hsla(20,90%,50%,.15);color:hsl(20,90%,60%);padding:.3rem .75rem;border-radius:2rem;font-size:.78rem;font-weight:600;">Case Study</span>
+                        <span style="background:var(--color-surface-light);color:var(--color-text-secondary);padding:.3rem .75rem;border-radius:2rem;font-size:.78rem;">5 min read</span>
+                    </div>
+                    <h2 id="blog-feat-title" style="font-size:1.55rem;font-weight:800;margin-bottom:.75rem;line-height:1.3;color:var(--color-text);">How We Helped GreatKey Educational Consult Increase Enrolment by 200%</h2>
+                    <p style="color:var(--color-text-secondary);line-height:1.7;margin-bottom:1.5rem;font-size:.95rem;">A behind-the-scenes look at how a complete website redesign transformed GreatKey's digital presence and turned their site into their best-performing sales tool.</p>
+                    <div style="display:flex;align-items:center;gap:1rem;">
+                        <div style="width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,hsl(20,90%,52%),hsl(32,95%,50%));display:flex;align-items:center;justify-content:center;font-weight:800;color:#fff;font-size:.85rem;">E</div>
+                        <div>
+                            <div style="font-size:.85rem;font-weight:600;color:var(--color-text);">Ernest</div>
+                            <div style="font-size:.78rem;color:var(--color-text-muted);">April 2025</div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article Grid -->
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.75rem;">
+
+                <!-- Article 1 -->
+                <article class="service-card" aria-labelledby="blog-1-title" style="display:flex;flex-direction:column;">
+                    <div style="background:linear-gradient(135deg,hsl(220,60%,15%),hsl(200,70%,12%));border-radius:var(--radius-lg);padding:2rem;text-align:center;margin-bottom:1.25rem;font-size:3rem;">&#x26A1;</div>
+                    <div style="display:flex;gap:.5rem;margin-bottom:.75rem;flex-wrap:wrap;">
+                        <span style="background:hsla(220,80%,55%,.15);color:hsl(220,80%,70%);padding:.25rem .65rem;border-radius:2rem;font-size:.75rem;font-weight:600;">Performance</span>
+                        <span style="color:var(--color-text-muted);font-size:.75rem;">4 min read</span>
+                    </div>
+                    <h3 id="blog-1-title" style="font-size:1.1rem;font-weight:700;margin-bottom:.6rem;line-height:1.4;color:var(--color-text);">5 Things Every Ghanaian Business Website Needs in 2025</h3>
+                    <p style="color:var(--color-text-secondary);font-size:.875rem;line-height:1.65;flex:1;margin-bottom:1.25rem;">From mobile-first design to WhatsApp integration — here's what separates websites that convert from those that just exist.</p>
+                    <div style="display:flex;align-items:center;gap:.75rem;padding-top:1rem;border-top:1px solid var(--color-border);">
+                        <div style="width:32px;height:32px;border-radius:50%;background:linear-gradient(135deg,hsl(220,80%,55%),hsl(200,85%,50%));display:flex;align-items:center;justify-content:center;font-weight:800;color:#fff;font-size:.78rem;">A</div>
+                        <div>
+                            <div style="font-size:.8rem;font-weight:600;color:var(--color-text);">Albert</div>
+                            <div style="font-size:.75rem;color:var(--color-text-muted);">March 2025</div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 2 -->
+                <article class="service-card" aria-labelledby="blog-2-title" style="display:flex;flex-direction:column;">
+                    <div style="background:linear-gradient(135deg,hsl(140,50%,12%),hsl(160,60%,10%));border-radius:var(--radius-lg);padding:2rem;text-align:center;margin-bottom:1.25rem;font-size:3rem;">&#x1F4B0;</div>
+                    <div style="display:flex;gap:.5rem;margin-bottom:.75rem;flex-wrap:wrap;">
+                        <span style="background:hsla(140,60%,40%,.18);color:hsl(140,60%,55%);padding:.25rem .65rem;border-radius:2rem;font-size:.75rem;font-weight:600;">Business</span>
+                        <span style="color:var(--color-text-muted);font-size:.75rem;">3 min read</span>
+                    </div>
+                    <h3 id="blog-2-title" style="font-size:1.1rem;font-weight:700;margin-bottom:.6rem;line-height:1.4;color:var(--color-text);">Why a Cheap Website Costs More Than a Good One</h3>
+                    <p style="color:var(--color-text-secondary);font-size:.875rem;line-height:1.65;flex:1;margin-bottom:1.25rem;">The hidden costs of bargain web design — lost leads, poor SEO, and the price of rebuilding from scratch 12 months later.</p>
+                    <div style="display:flex;align-items:center;gap:.75rem;padding-top:1rem;border-top:1px solid var(--color-border);">
+                        <div style="width:32px;height:32px;border-radius:50%;background:linear-gradient(135deg,hsl(20,90%,52%),hsl(32,95%,50%));display:flex;align-items:center;justify-content:center;font-weight:800;color:#fff;font-size:.78rem;">E</div>
+                        <div>
+                            <div style="font-size:.8rem;font-weight:600;color:var(--color-text);">Ernest</div>
+                            <div style="font-size:.75rem;color:var(--color-text-muted);">February 2025</div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 3 -->
+                <article class="service-card" aria-labelledby="blog-3-title" style="display:flex;flex-direction:column;">
+                    <div style="background:linear-gradient(135deg,hsl(280,50%,15%),hsl(260,60%,12%));border-radius:var(--radius-lg);padding:2rem;text-align:center;margin-bottom:1.25rem;font-size:3rem;">&#x1F50D;</div>
+                    <div style="display:flex;gap:.5rem;margin-bottom:.75rem;flex-wrap:wrap;">
+                        <span style="background:hsla(280,60%,55%,.15);color:hsl(280,60%,70%);padding:.25rem .65rem;border-radius:2rem;font-size:.75rem;font-weight:600;">SEO</span>
+                        <span style="color:var(--color-text-muted);font-size:.75rem;">6 min read</span>
+                    </div>
+                    <h3 id="blog-3-title" style="font-size:1.1rem;font-weight:700;margin-bottom:.6rem;line-height:1.4;color:var(--color-text);">Local SEO for Ghanaian Businesses: A Practical 2025 Guide</h3>
+                    <p style="color:var(--color-text-secondary);font-size:.875rem;line-height:1.65;flex:1;margin-bottom:1.25rem;">How to rank on Google in Accra, Kumasi, and beyond — structured data, Google Business Profile, and page speed explained simply.</p>
+                    <div style="display:flex;align-items:center;gap:.75rem;padding-top:1rem;border-top:1px solid var(--color-border);">
+                        <div style="width:32px;height:32px;border-radius:50%;background:linear-gradient(135deg,hsl(220,80%,55%),hsl(200,85%,50%));display:flex;align-items:center;justify-content:center;font-weight:800;color:#fff;font-size:.78rem;">A</div>
+                        <div>
+                            <div style="font-size:.8rem;font-weight:600;color:var(--color-text);">Albert</div>
+                            <div style="font-size:.75rem;color:var(--color-text-muted);">January 2025</div>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- Newsletter CTA -->
+            <div style="margin-top:4rem;background:linear-gradient(135deg,hsl(20,90%,12%),hsl(222,28%,10%));border:1px solid hsla(20,90%,50%,.2);border-radius:var(--radius-xl);padding:3rem;text-align:center;">
+                <h2 style="font-family:'Outfit',sans-serif;font-size:1.6rem;font-weight:800;margin-bottom:.5rem;color:var(--color-text);">Get insights in your inbox</h2>
+                <p style="color:var(--color-text-secondary);margin-bottom:1.5rem;">One email per month. No spam. Practical advice for growing your business online.</p>
+                <form action="https://formsubmit.co/hello@brabel.solutions" method="POST" style="display:flex;gap:.75rem;max-width:440px;margin:0 auto;flex-wrap:wrap;">
+                    <input type="hidden" name="_subject" value="New Blog Newsletter Signup — BrAbel">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="email" name="email" placeholder="your@email.com" required style="flex:1;min-width:200px;padding:.75rem 1.1rem;border-radius:2rem;border:1px solid var(--color-border);background:var(--color-surface);color:var(--color-text);font-size:.9rem;outline:none;">
+                    <button type="submit" style="padding:.75rem 1.5rem;border-radius:2rem;background:linear-gradient(135deg,hsl(20,90%,52%),hsl(32,95%,50%));color:#fff;font-weight:700;border:none;cursor:pointer;white-space:nowrap;">Subscribe</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section section">
+        <div class="container">
+            <div class="cta-card">
+                <div class="cta-content">
+                    <h2 class="cta-title">Ready to Build Something Great?</h2>
+                    <p class="cta-text">Let's turn your ideas into a high-converting digital product. Get a free consultation today.</p>
+                    <div class="cta-buttons">
+                        <a href="contact.html" class="btn btn-primary btn-large">Start Your Project
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                        </a>
+                        <a href="portfolio.html" class="btn btn-outline btn-large">View Our Work</a>
+                    </div>
+                </div>
+                <div class="cta-visual">
+                    <div class="cta-float-card card-1"><div class="float-icon">&#x270D;</div><div class="float-text">Expert Tips</div></div>
+                    <div class="cta-float-card card-2"><div class="float-icon">&#x1F4C8;</div><div class="float-text">Real Results</div></div>
+                    <div class="cta-float-card card-3"><div class="float-icon">&#x1F4A1;</div><div class="float-text">Fresh Ideas</div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <a href="index.html" class="footer-logo"><span class="logo-pixel">Br</span><span class="logo-craft">Abel</span></a>
+                    <p class="footer-description">Creating stunning, high-converting websites and custom software for startups and growing businesses since 2024.</p>
+                    <div class="social-links">
+                        <a href="mailto:hello@brabel.solutions" aria-label="Email" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        </a>
+                        <a href="tel:+233209895858" aria-label="Phone" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.66A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+                        </a>
+                        <a href="https://wa.me/233209895858" aria-label="WhatsApp" class="social-link" target="_blank" rel="noopener">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="process.html">Our Process</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html#web-design">Web Design</a></li>
+                        <li><a href="services.html#web-development">Web Development</a></li>
+                        <li><a href="services.html#ecommerce">E-commerce</a></li>
+                        <li><a href="services.html#custom-software">Custom Software</a></li>
+                        <li><a href="services.html#maintenance">Maintenance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Get In Touch</h4>
+                    <ul class="footer-contact">
+                        <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M14 11.2v2.4a1.6 1.6 0 01-1.744 1.6A15.832 15.832 0 012.544 4.944 1.6 1.6 0 014.144 3.2h2.4a1.6 1.6 0 011.6 1.376c.102.768.289 1.522.56 2.248a1.6 1.6 0 01-.36 1.688L6.872 10.24a12.8 12.8 0 004.888 4.888l1.728-1.472a1.6 1.6 0 011.688-.36c.726.271 1.48.458 2.248.56A1.6 1.6 0 0114 14.4z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>+233 20 989 5858</li>
+                        <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2.667 2.667h10.666c.734 0 1.334.6 1.334 1.333v8c0 .733-.6 1.333-1.334 1.333H2.667c-.734 0-1.334-.6-1.334-1.333V4c0-.733.6-1.333 1.334-1.333z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M14.667 4L8 8.667 1.333 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>hello@brabel.solutions</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 BrAbel. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/page-hero-canvas.js"></script>
+    <script src="assets/js/livechat.js"></script>
+</body>
+</html>

@@ -41,7 +41,7 @@
         let t = 0;
         function drawAbout() {
             const W = getW(), H = getH();
-            if (!W) { requestAnimationFrame(drawAbout); return; }
+            if (!W || !H) { requestAnimationFrame(drawAbout); return; }
             // Dark base
             ctx.fillStyle = '#05071e';
             ctx.fillRect(0, 0, W, H);
@@ -95,7 +95,7 @@
 
         function drawServices() {
             const W = getW(), H = getH();
-            if (!W) { requestAnimationFrame(drawServices); return; }
+            if (!W || !H) { requestAnimationFrame(drawServices); return; }
             ctx.fillStyle = '#030b1a';
             ctx.fillRect(0, 0, W, H);
 
@@ -179,7 +179,7 @@
         let inited = false;
         function drawPortfolio() {
             const W = getW(), H = getH();
-            if (!W) { requestAnimationFrame(drawPortfolio); return; }
+            if (!W || !H) { requestAnimationFrame(drawPortfolio); return; }
             if (!inited) { initParticles(W, H); inited = true; }
 
             // Fade trail
@@ -248,7 +248,7 @@
 
         function drawProcess() {
             const W = getW(), H = getH();
-            if (!W) { requestAnimationFrame(drawProcess); return; }
+            if (!W || !H) { requestAnimationFrame(drawProcess); return; }
             if (!inited) { initCols(W, H); inited = true; }
 
             ctx.fillStyle = 'rgba(4, 8, 22, 0.22)';
@@ -353,7 +353,7 @@
 
         function drawPricing() {
             const W = getW(), H = getH();
-            if (!W) { requestAnimationFrame(drawPricing); return; }
+            if (!W || !H) { requestAnimationFrame(drawPricing); return; }
 
             /* ── Background gradient ── */
             const bg = ctx.createLinearGradient(0, 0, 0, H);

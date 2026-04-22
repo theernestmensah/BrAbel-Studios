@@ -25,8 +25,9 @@ const PI2 = Math.PI * 2;
     const ctx = canvas.getContext('2d');
 
     function resize() {
-        canvas.width = canvas.offsetWidth;
-        canvas.height = canvas.offsetHeight;
+        const rect = canvas.getBoundingClientRect();
+        canvas.width = rect.width;
+        canvas.height = rect.height;
     }
     resize();
     window.addEventListener('resize', resize);
@@ -109,8 +110,9 @@ const PI2 = Math.PI * 2;
     const ctx = canvas.getContext('2d');
 
     function resize() {
-        canvas.width = canvas.offsetWidth;
-        canvas.height = canvas.offsetHeight;
+        const rect = canvas.getBoundingClientRect();
+        canvas.width = rect.width;
+        canvas.height = rect.height;
     }
     resize();
     window.addEventListener('resize', resize);
@@ -209,6 +211,7 @@ const PI2 = Math.PI * 2;
     const ctx = canvas.getContext('2d');
 
     function resize() {
+        ctx.setTransform(1, 0, 0, 1, 0, 0);
         canvas.width = canvas.offsetWidth * window.devicePixelRatio;
         canvas.height = canvas.offsetHeight * window.devicePixelRatio;
         ctx.scale(window.devicePixelRatio, window.devicePixelRatio);
@@ -349,6 +352,7 @@ const PI2 = Math.PI * 2;
         const ctx = canvas.getContext('2d');
 
         function resize() {
+            ctx.setTransform(1, 0, 0, 1, 0, 0);
             canvas.width = canvas.offsetWidth * window.devicePixelRatio;
             canvas.height = canvas.offsetHeight * window.devicePixelRatio;
             ctx.scale(window.devicePixelRatio, window.devicePixelRatio);
@@ -415,7 +419,7 @@ const PI2 = Math.PI * 2;
         ctx.fillStyle = fd; ctx.fillRect(0, H * .6, W, H * .4);
     });
 
-    /* Project 2 — BGBrand (fashion, rose/purple tones) */
+    /* Project 2 — GripNGo (marketing, sleek dark tones) */
     paintProject('pfCanvas2', (ctx, W, H) => {
         const bg = ctx.createLinearGradient(0, 0, W, H);
         bg.addColorStop(0, '#2d0a2e');
@@ -494,8 +498,9 @@ const PI2 = Math.PI * 2;
     const ctx = canvas.getContext('2d');
 
     function resize() {
-        canvas.width = canvas.offsetWidth;
-        canvas.height = canvas.offsetHeight;
+        const rect = canvas.getBoundingClientRect();
+        canvas.width = rect.width;
+        canvas.height = rect.height;
     }
     resize();
     window.addEventListener('resize', resize);
@@ -617,3 +622,43 @@ document.querySelectorAll('.bfooter-bottom p').forEach(el => {
 
 console.log('%cBrAbel ✦', 'font-size:22px;font-weight:900;color:#f97316;font-family:Outfit,sans-serif');
 console.log('%cCanvas Edition — handcrafted with JS.', 'font-size:12px;color:#6b7280');
+
+/* ═══════════════════════════════════════════════════════
+   8.  HERO TYPEWRITER — cycles accent word
+   ═══════════════════════════════════════════════════════ */
+(function heroTypewriter() {
+    const el = document.querySelector('.hero-pw-grad');
+    if (!el) return;
+
+    const words = ['Empires.', 'Experiences.', 'Solutions.', 'Futures.'];
+    let wi = 0, charI = 0, deleting = false, pauseTimer = null;
+    const TYPING_SPEED = 75, DELETE_SPEED = 45, PAUSE_AFTER = 2200, PAUSE_BEFORE = 400;
+
+    function tick() {
+        const word = words[wi];
+        if (deleting) {
+            charI--;
+            el.textContent = word.slice(0, charI);
+            if (charI === 0) {
+                deleting = false;
+                wi = (wi + 1) % words.length;
+                pauseTimer = setTimeout(tick, PAUSE_BEFORE);
+                return;
+            }
+            pauseTimer = setTimeout(tick, DELETE_SPEED);
+        } else {
+            el.textContent = word.slice(0, charI + 1);
+            charI++;
+            if (charI === word.length) {
+                deleting = true;
+                pauseTimer = setTimeout(tick, PAUSE_AFTER);
+                return;
+            }
+            pauseTimer = setTimeout(tick, TYPING_SPEED);
+        }
+    }
+
+    // Start after initial pause so page loads feel calm
+    setTimeout(tick, 1800);
+})();
+
